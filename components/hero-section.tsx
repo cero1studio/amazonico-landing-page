@@ -1,11 +1,35 @@
 "use client"
 
+import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Sparkles, ShieldCheck, Truck } from "lucide-react"
 import Image from "next/image"
+import { CheckoutModal } from "@/components/checkout-modal"
+import { useRouter } from "next/navigation"
 
 export function HeroSection() {
+  const [isCheckoutOpen, setIsCheckoutOpen] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
+  const router = useRouter()
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768)
+    }
+    checkMobile()
+    window.addEventListener("resize", checkMobile)
+    return () => window.removeEventListener("resize", checkMobile)
+  }, [])
+
+  const handleCheckoutClick = () => {
+    if (isMobile) {
+      router.push("/checkout")
+    } else {
+      setIsCheckoutOpen(true)
+    }
+  }
+
   const scrollToPricing = () => {
     const pricingSection = document.getElementById("pricing")
     pricingSection?.scrollIntoView({ behavior: "smooth" })
@@ -15,12 +39,12 @@ export function HeroSection() {
     <section className="relative overflow-hidden bg-gradient-to-b from-background via-muted/20 to-background">
       <div className="absolute inset-0 bg-[url('/ocean-waves-texture.jpg')] opacity-5 bg-cover bg-center" />
 
-      <div className="container relative mx-auto px-4 py-12 md:py-20 lg:py-28">
-        <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center">
+      <div className="container relative mx-auto px-4 py-6 md:py-10 lg:py-12">
+        <div className="grid gap-6 lg:grid-cols-2 lg:gap-8 items-center">
           <div className="flex flex-col gap-4 md:gap-6 text-center lg:text-left">
             <Badge className="self-center lg:self-start w-fit bg-accent text-accent-foreground border-0 px-4 py-2 rounded-full text-sm md:text-base">
               <Sparkles className="mr-2 h-4 w-4" />
-              Producto Premium Certificado INVIMA
+              Delicioso sabor a coco • Certificado INVIMA
             </Badge>
 
             <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl text-balance">
@@ -28,8 +52,7 @@ export function HeroSection() {
             </h1>
 
             <p className="text-base md:text-lg text-muted-foreground text-pretty leading-relaxed">
-              Colágeno marino hidrolizado de máxima absorción con{" "}
-              <span className="font-semibold text-foreground">delicioso sabor a coco natural</span>. Resultados visibles
+              Colágeno marino hidrolizado de máxima absorción. Resultados visibles
               en 3 semanas: menos arrugas, cabello más grueso, uñas fuertes y mayor movilidad articular.
             </p>
 
@@ -37,7 +60,7 @@ export function HeroSection() {
               <Button
                 size="lg"
                 className="text-base md:text-lg px-6 md:px-8 py-5 md:py-6 bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg shadow-primary/30 rounded-full font-semibold transition-all duration-300 hover:scale-105"
-                onClick={scrollToPricing}
+                onClick={handleCheckoutClick}
               >
                 Comprar con Envío Gratis
               </Button>
@@ -65,13 +88,13 @@ export function HeroSection() {
 
           <div className="relative mt-8 lg:mt-0">
             <div className="absolute -inset-4 bg-primary/10 rounded-3xl blur-3xl" />
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-border">
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-border aspect-square">
               <Image
                 src="/product-beach.jpeg"
                 alt="Amazoniico Colágeno Marino"
                 width={600}
                 height={600}
-                className="w-full h-auto object-cover"
+                className="w-full h-full object-cover"
                 priority
               />
             </div>
@@ -84,6 +107,11 @@ export function HeroSection() {
           </div>
         </div>
       </div>
+
+      <CheckoutModal
+        isOpen={isCheckoutOpen}
+        onClose={() => setIsCheckoutOpen(false)}
+      />
     </section>
   )
 }

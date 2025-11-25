@@ -1,11 +1,33 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Menu, X, ShoppingCart } from "lucide-react"
+import { CheckoutModal } from "@/components/checkout-modal"
+import { useRouter } from "next/navigation"
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isCheckoutOpen, setIsCheckoutOpen] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
+  const router = useRouter()
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768)
+    }
+    checkMobile()
+    window.addEventListener("resize", checkMobile)
+    return () => window.removeEventListener("resize", checkMobile)
+  }, [])
+
+  const handleCheckoutClick = () => {
+    if (isMobile) {
+      router.push("/checkout")
+    } else {
+      setIsCheckoutOpen(true)
+    }
+  }
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id)
@@ -51,7 +73,7 @@ export function Navbar() {
 
           <div className="flex items-center gap-4">
             <Button
-              onClick={() => scrollToSection("pricing")}
+              onClick={handleCheckoutClick}
               size="sm"
               className="bg-primary-foreground hover:bg-primary-foreground/90 text-primary hidden md:flex rounded-full px-6 shadow-lg font-semibold"
             >
@@ -95,7 +117,10 @@ export function Navbar() {
                 FAQ
               </button>
               <Button
-                onClick={() => scrollToSection("pricing")}
+                onClick={() => {
+                  handleCheckoutClick()
+                  setIsMenuOpen(false)
+                }}
                 size="sm"
                 className="bg-primary-foreground hover:bg-primary-foreground/90 text-primary w-full mt-2 rounded-full font-semibold"
               >
@@ -106,6 +131,11 @@ export function Navbar() {
           </div>
         )}
       </div>
+
+      <CheckoutModal
+        isOpen={isCheckoutOpen}
+        onClose={() => setIsCheckoutOpen(false)}
+      />
     </nav>
   )
 }

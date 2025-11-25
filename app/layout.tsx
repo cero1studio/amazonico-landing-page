@@ -11,24 +11,52 @@ export const metadata: Metadata = {
   title: "Amazoniico - Colágeno Marino Hidrolizado Premium | Envío Gratis Colombia",
   description:
     "Descubre el colágeno marino más puro del Amazonas. Rejuvenece tu piel, fortalece tu cabello y mejora tus articulaciones. 50% OFF + Envío gratis a toda Colombia. Garantía de 30 días.",
-  generator: "v0.app",
   keywords: "colágeno marino, colágeno hidrolizado, belleza, piel joven, salud articular, suplementos Colombia",
-  icons: {
-    icon: [
+  authors: [{ name: "CeroUno SAS" }],
+  creator: "CeroUno SAS",
+  publisher: "Amazoniico",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://amazoniico.co"),
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Amazoniico - Colágeno Marino Hidrolizado Premium",
+    description:
+      "Descubre el colágeno marino más puro del Amazonas. Rejuvenece tu piel, fortalece tu cabello y mejora tus articulaciones. 50% OFF + Envío gratis a toda Colombia.",
+    url: process.env.NEXT_PUBLIC_SITE_URL || "https://amazoniico.co",
+    siteName: "Amazoniico",
+    images: [
       {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
+        url: "/amazoniico-logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Amazoniico - Colágeno Marino Hidrolizado Premium",
       },
     ],
-    apple: "/apple-icon.png",
+    locale: "es_CO",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Amazoniico - Colágeno Marino Hidrolizado Premium",
+    description:
+      "Descubre el colágeno marino más puro del Amazonas. Rejuvenece tu piel, fortalece tu cabello y mejora tus articulaciones.",
+    images: ["/amazoniico-logo.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
   },
 }
 

@@ -1,30 +1,67 @@
-# Amazonico landing page
+# Amazoniico Landing Page
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+Landing page para Amazoniico - Colágeno Marino Hidrolizado Premium
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/javiers-projects-29c0f904/v0-amazonico-landing-page)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/bZHLT7ecdCz)
+## Descripción
 
-## Overview
+Landing page desarrollada por CeroUno SAS para Amazoniico, producto de colágeno marino certificado INVIMA. El sitio presenta información sobre el producto, beneficios, testimonios, precios y políticas de envío.
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+## Tecnologías
 
-## Deployment
+- **Next.js 16** - Framework React con App Router
+- **React 19** - Biblioteca de UI
+- **TypeScript** - Tipado estático
+- **Tailwind CSS 4** - Framework de estilos
+- **Radix UI** - Componentes accesibles
+- **Vercel Analytics** - Análisis de tráfico
 
-Your project is live at:
+## Estructura del Proyecto
 
-**[https://vercel.com/javiers-projects-29c0f904/v0-amazonico-landing-page](https://vercel.com/javiers-projects-29c0f904/v0-amazonico-landing-page)**
+```
+├── app/                    # App Router de Next.js
+│   ├── layout.tsx         # Layout principal con metadata SEO
+│   ├── page.tsx           # Página principal
+│   ├── globals.css        # Estilos globales
+│   ├── devoluciones/      # Política de devoluciones
+│   ├── privacidad/        # Política de privacidad
+│   └── terminos/          # Términos y condiciones
+├── components/            # Componentes React
+│   ├── ui/               # Componentes UI base (shadcn/ui)
+│   └── [componentes de sección]
+└── public/               # Archivos estáticos
+```
 
-## Build your app
+## Scripts Disponibles
 
-Continue building your app on:
+```bash
+# Desarrollo
+pnpm dev
 
-**[https://v0.app/chat/bZHLT7ecdCz](https://v0.app/chat/bZHLT7ecdCz)**
+# Construcción para producción
+pnpm build
 
-## How It Works
+# Iniciar servidor de producción
+pnpm start
 
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+# Linter
+pnpm lint
+```
+
+## Desarrollo
+
+Desarrollado por **CeroUno SAS**
+
+## SEO
+
+El proyecto incluye optimizaciones SEO iniciales:
+- Metadata completa (Open Graph, Twitter Cards)
+- Schema.org JSON-LD
+- Sitemap.xml
+- Robots.txt
+- Canonical URLs
+
+Ver `docs/SEO.md` para más detalles.
+
+## Licencia
+
+Privado - Todos los derechos reservados

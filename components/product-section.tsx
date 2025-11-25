@@ -17,14 +17,14 @@ export function ProductSection() {
   ]
 
   return (
-    <section className="py-16 md:py-24 lg:py-32 bg-muted/30">
+    <section id="product" className="py-16 md:py-24 lg:py-32 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
           <div className="order-2 lg:order-1">
             <div className="flex flex-wrap gap-2 mb-4 md:mb-6">
               <Badge className="bg-accent text-accent-foreground border-0">Fórmula Premium</Badge>
               <Badge className="bg-primary/10 text-primary border-0">
-                <Image src="/invima-logo.jpg" alt="INVIMA" width={16} height={16} className="mr-1" />
+                <Image src="/invima.gif" alt="INVIMA" width={16} height={16} className="mr-1" />
                 Registro INVIMA
               </Badge>
             </div>

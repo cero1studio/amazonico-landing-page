@@ -21,7 +21,7 @@ export function ShippingInfo() {
               <div className="flex flex-col md:flex-row items-center gap-6 mb-6">
                 <div className="bg-primary/10 p-4 rounded-2xl">
                   <Image
-                    src="/coordinadora-logo.jpg"
+                    src="/logo-coordinadora.png"
                     alt="Coordinadora"
                     width={120}
                     height={60}

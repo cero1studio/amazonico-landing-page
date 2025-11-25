@@ -19,11 +19,16 @@ export function TrustSection() {
           </div>
 
           <div className="text-center">
-            <div className="bg-accent/10 w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center mx-auto mb-2">
-              <Image src="/invima-logo.jpg" alt="INVIMA" width={32} height={32} className="w-6 h-6 md:w-8 md:h-8" />
+            <div className="flex justify-center mb-2">
+              <Image 
+                src="/invima.gif" 
+                alt="INVIMA" 
+                width={120} 
+                height={120} 
+                className="w-auto h-12 md:h-16 object-contain" 
+              />
             </div>
             <div className="font-bold text-sm md:text-lg text-foreground">Certificado</div>
-            <div className="text-xs md:text-sm text-muted-foreground font-medium">INVIMA</div>
           </div>
 
           <div className="text-center">

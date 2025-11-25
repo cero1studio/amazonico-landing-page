@@ -1,0 +1,1604 @@
+[00:00:02.341] Server  LOG      ✓ Ready in 1657ms
+[00:00:20.795] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:21.432] Browser WARN    Image with src "http://localhost:3000/invima.gif" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:21.682] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:21.682] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:21.682] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764029223711}
+[00:00:24.420] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:00:24.420] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:12:51.486] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:51.776] Browser WARN    Image with src "http://localhost:3000/invima.gif" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:12:51.776] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:12:51.776] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:12:51.776] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764029973823}
+[00:12:52.278] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:12:52.278] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:13:05.615] Server  LOG      ✓ Compiled in 222ms
+[00:13:06.010] Browser ERROR   ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:847:6
+Parsing ecmascript source code failed
+  845 |       </div>
+  846 |     </div>
+> 847 |     </div >
+      |      ^^^^^^
+  848 |   );
+  849 |
+  850 |   if (asPage) {
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+[00:13:23.248] Server  LOG      ✓ Compiled in 139ms
+[00:13:59.254] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:13:59.509] Browser WARN    Image with src "http://localhost:3000/invima.gif" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:13:59.509] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:13:59.509] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:13:59.509] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764030041557}
+[00:14:01.478] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:14:01.478] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:14:57.263] Server  LOG      ✓ Compiled in 156ms
+[00:14:59.365] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:15:01.105] Browser WARN    Image with src "http://localhost:3000/invima.gif" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:15:01.105] Browser WARN    Image with src "http://localhost:3000/amazoniico-logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:15:01.254] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:15:01.260] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:15:01.260] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764030103199}
+[00:15:03.716] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/checkout color: rgb(120, 120, 120) color: inherit {"dp":"/checkout","o":"http://localhost:3000/checkout","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764030105731}
+[00:15:10.368] Server  LOG      ✓ Compiled in 187ms
+[00:15:37.918] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764030139962}
+[00:15:40.471] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:15:40.940] Browser WARN    Image with src "http://localhost:3000/invima.gif" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:15:40.940] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:15:40.940] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:15:40.940] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764030142993}
+[00:15:41.435] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:15:41.435] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:19:31.045] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:19:31.053] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:20:15.149] Server  ERROR   Error de Wompi: {}
+[00:20:31.902] Browser ERROR   Error de la API: Error al crear sesión de pago en Wompi {"details":{"message":"Not Found"},"error":"Error al crear sesión de pago en Wompi"}
+[00:21:46.446] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:21:46.762] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:21:46.762] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:21:46.762] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764030508993}
+[00:21:48.009] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:21:48.010] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:22:14.075] Server  LOG     Creando payment link con: {}
+[00:22:14.475] Server  LOG     Respuesta de Wompi: "{\"data\":{\"id\":\"test_9HfZkn\",\"name\":\"Pedido AMAZONIICO-1764030536117-s7doobde9\",\"amount_in_cents\":5500000,\"currency\":\"COP\",\"single_use\":false,\"description\":\"1 Frasco - Amazoniico Colágeno Marino. Indicaciones: llamar al llegar - llamar al llegar\",\"sku\":null,\"expires_at\":null,\"collect_shipping\":false,\"collect_customer_legal_id\":false,\"redirect_url\":\"http://localhost:3000/checkout/success?reference=AMAZONIICO-1764030536117-s7doobde9\",\"image_url\":null,\"active\":true,\"customer_data\":null,\"created_at\":\"2025-11-25T00:28:56.861Z\",\"updated_at\":\"2025-11-25T00:28:56.861Z\",\"taxes\":[],\"default_language\":\"es\",\"merchant_public_key\":\"pub_test_U8XbzsdEWaIR1vXje0LKuGf4yQjcehH2\"},\"meta\":{}}"
+[00:22:14.476] Server  LOG     Payment link creado: {}
+[00:22:30.183] Browser ERROR   Error: {}
+[00:22:58.887] Server  LOG      ✓ Compiled in 182ms
+[00:23:14.595] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:23:14.595] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:23:17.295] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:23:17.628] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:23:17.628] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:23:17.628] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764030599861}
+[00:23:18.344] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:23:18.344] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:23:37.413] Server  LOG     Creando payment link con: {}
+[00:23:38.466] Server  LOG     Respuesta de Wompi: "{\"data\":{\"id\":\"test_AXWIyK\",\"name\":\"Pedido AMAZONIICO-1764030619731-wy9r0128s\",\"amount_in_cents\":5500000,\"currency\":\"COP\",\"single_use\":false,\"description\":\"1 Frasco - Amazoniico Colágeno Marino. Indicaciones: llamar al llegar - llamar al llegar\",\"sku\":null,\"expires_at\":null,\"collect_shipping\":false,\"collect_customer_legal_id\":false,\"redirect_url\":\"http://localhost:3000/checkout/success?reference=AMAZONIICO-1764030619731-wy9r0128s\",\"image_url\":null,\"active\":true,\"customer_data\":null,\"created_at\":\"2025-11-25T00:30:20.865Z\",\"updated_at\":\"2025-11-25T00:30:20.865Z\",\"taxes\":[],\"default_language\":\"es\",\"merchant_public_key\":\"pub_test_U8XbzsdEWaIR1vXje0LKuGf4yQjcehH2\"},\"meta\":{}}"
+[00:23:38.467] Server  LOG     Payment link creado: {}
+[00:23:47.971] Browser LOG     Respuesta completa de la API: {"reference":"AMAZONIICO-1764030619731-wy9r0128s","sessionId":"test_AXWIyK"}
+[00:23:47.971] Browser ERROR   Respuesta sin checkoutUrl: {"reference":"AMAZONIICO-1764030619731-wy9r0128s","sessionId":"test_AXWIyK"}
+[00:23:47.971] Browser ERROR   Error: {}
+[00:25:43.107] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:25:43.371] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:25:43.372] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:25:43.372] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764030745610}
+[00:25:44.868] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:25:44.868] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:26:07.373] Server  LOG     Creando payment link con: {}
+[00:26:08.508] Server  LOG     Respuesta de Wompi: "{\"data\":{\"id\":\"test_bo2z7U\",\"name\":\"Pedido AMAZONIICO-1764030769426-cu28feot0\",\"amount_in_cents\":5500000,\"currency\":\"COP\",\"single_use\":false,\"description\":\"1 Frasco - Amazoniico Colágeno Marino. Indicaciones: bvbvnv dsfdsfs sdfsf - bvbvnv dsfdsfs sdfsf\",\"sku\":null,\"expires_at\":null,\"collect_shipping\":false,\"collect_customer_legal_id\":false,\"redirect_url\":\"http://localhost:3000/checkout/success?reference=AMAZONIICO-1764030769426-cu28feot0\",\"image_url\":null,\"active\":true,\"customer_data\":null,\"created_at\":\"2025-11-25T00:32:50.915Z\",\"updated_at\":\"2025-11-25T00:32:50.915Z\",\"taxes\":[],\"default_language\":\"es\",\"merchant_public_key\":\"pub_test_U8XbzsdEWaIR1vXje0LKuGf4yQjcehH2\"},\"meta\":{}}"
+[00:26:08.508] Server  LOG     Payment link creado: {}
+[00:26:08.509] Server  LOG     URL construida manualmente: "https://sandbox.wompi.co/l/test_bo2z7U"
+[00:26:08.516] Browser LOG     Respuesta completa de la API: {"checkoutUrl":"https://sandbox.wompi.co/l/test_bo2z7U","reference":"AMAZONIICO-1764030769426-cu28feot0","sessionId":"test_bo2z7U"}
+[00:26:08.516] Browser LOG     Redirigiendo a: https://sandbox.wompi.co/l/test_bo2z7U
+[00:28:18.966] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:28:19.580] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:28:19.580] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:28:19.580] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764030901823}
+[00:28:20.952] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:28:21.506] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:28:21.506] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:28:21.506] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764030903747}
+[00:28:30.620] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:28:30.850] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:28:30.850] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:28:30.850] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764030913092}
+[00:28:31.606] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:28:31.606] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:28:55.315] Server  LOG     URL de checkout generada: "https://checkout.wompi.co/p/?public-key=pub_test_U8XbzsdEWaIR1vXje0LKuGf4yQjcehH2&currency=COP&amount-in-cents=9000000&reference=AMAZONIICO-1764030937423-t9iq48dv5&redirect-url=http%3A%2F%2Flocalhost%3A3000%2Fcheckout%2Fsuccess%3Freference%3DAMAZONIICO-1764030937423-t9iq48dv5&customer-data%3Aemail=cero1studio%40gmail.com&customer-data%3Afull-name=Javier+Mayorga&customer-data%3Aphone-number=3014575984&customer-data%3Alegal-id=1073686215&customer-data%3Alegal-id-type=CC"
+[00:28:55.325] Browser LOG     Respuesta completa de la API: {"checkoutUrl":"https://checkout.wompi.co/p/?public-key=pub_test_U8XbzsdEWaIR1vXje0LKuGf4yQjcehH2&currency=COP&amount-in-cents=9000000&reference=AMAZONIICO-1764030937423-t9iq48dv5&redirect-url=http%3A%2F%2Flocalhost%3A3000%2Fcheckout%2Fsuccess%3Freference%3DAMAZONIICO-1764030937423-t9iq48dv5&customer-data%3Aemail=cero1studio%40gmail.com&customer-data%3Afull-name=Javier+Mayorga&customer-data%3Aphone-number=3014575984&customer-data%3Alegal-id=1073686215&customer-data%3Alegal-id-type=CC","reference":"AMAZONIICO-1764030937423-t9iq48dv5","sessionId":"AMAZONIICO-1764030937423-t9iq48dv5"}
+[00:28:55.325] Browser LOG     Redirigiendo a: https://checkout.wompi.co/p/?public-key=pub_test_U8XbzsdEWaIR1vXje0LKuGf4yQjcehH2&currency=COP&amount-in-cents=9000000&reference=AMAZONIICO-1764030937423-t9iq48dv5&redirect-url=http%3A%2F%2Flocalhost%3A3000%2Fcheckout%2Fsuccess%3Freference%3DAMAZONIICO-1764030937423-t9iq48dv5&customer-data%3Aemail=cero1studio%40gmail.com&customer-data%3Afull-name=Javier+Mayorga&customer-data%3Aphone-number=3014575984&customer-data%3Alegal-id=1073686215&customer-data%3Alegal-id-type=CC
+[00:32:37.186] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:32:37.481] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:32:37.481] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:32:37.481] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764031159730}
+[00:32:39.437] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:32:39.762] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:32:39.762] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:32:39.762] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764031162012}
+[00:32:45.504] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:32:45.504] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:33:13.568] Server  LOG     URL de checkout generada: "https://checkout.wompi.co/p/?public-key=pub_test_U8XbzsdEWaIR1vXje0LKuGf4yQjcehH2&currency=COP&amount-in-cents=5500000&reference=AMAZONIICO-1764031195652-3e8aw4s60&redirect-url=http%3A%2F%2Flocalhost%3A3000%2Fcheckout%2Fsuccess%3Freference%3DAMAZONIICO-1764031195652-3e8aw4s60&customer-data%3Aemail=cero1studio%40gmail.com&customer-data%3Afull-name=Javier+Mayorga&customer-data%3Aphone-number=3014575984&customer-data%3Alegal-id=1073686215&customer-data%3Alegal-id-type=CC&payment-method=PSE"
+[00:33:13.569] Server  LOG     Método de pago preseleccionado: "PSE"
+[00:33:13.578] Browser LOG     Respuesta completa de la API: {"checkoutUrl":"https://checkout.wompi.co/p/?public-key=pub_test_U8XbzsdEWaIR1vXje0LKuGf4yQjcehH2&currency=COP&amount-in-cents=5500000&reference=AMAZONIICO-1764031195652-3e8aw4s60&redirect-url=http%3A%2F%2Flocalhost%3A3000%2Fcheckout%2Fsuccess%3Freference%3DAMAZONIICO-1764031195652-3e8aw4s60&customer-data%3Aemail=cero1studio%40gmail.com&customer-data%3Afull-name=Javier+Mayorga&customer-data%3Aphone-number=3014575984&customer-data%3Alegal-id=1073686215&customer-data%3Alegal-id-type=CC&payment-method=PSE","reference":"AMAZONIICO-1764031195652-3e8aw4s60","sessionId":"AMAZONIICO-1764031195652-3e8aw4s60"}
+[00:33:13.578] Browser LOG     Redirigiendo a: https://checkout.wompi.co/p/?public-key=pub_test_U8XbzsdEWaIR1vXje0LKuGf4yQjcehH2&currency=COP&amount-in-cents=5500000&reference=AMAZONIICO-1764031195652-3e8aw4s60&redirect-url=http%3A%2F%2Flocalhost%3A3000%2Fcheckout%2Fsuccess%3Freference%3DAMAZONIICO-1764031195652-3e8aw4s60&customer-data%3Aemail=cero1studio%40gmail.com&customer-data%3Afull-name=Javier+Mayorga&customer-data%3Aphone-number=3014575984&customer-data%3Alegal-id=1073686215&customer-data%3Alegal-id-type=CC&payment-method=PSE
+[00:37:34.916] Server  LOG      ✓ Compiled in 463ms
+[00:37:50.625] Server  ERROR    ⨯ TypeError: Cannot read properties of undefined (reading 'name')
+[00:37:50.816] Server  ERROR    ⨯ TypeError: Cannot read properties of undefined (reading 'name')
+[00:37:51.322] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:37:51.577] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'name')
+[00:43:41.878] Server  ERROR    ⨯ TypeError: Cannot read properties of undefined (reading 'name')
+[00:43:42.403] Server  ERROR    ⨯ TypeError: Cannot read properties of undefined (reading 'name')
+[00:43:42.688] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:43:42.824] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'name')
+[00:45:14.315] Server  ERROR    ⨯ TypeError: Cannot read properties of undefined (reading 'name')
+[00:45:14.560] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:45:14.736] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'name')
+[00:52:00.045] Server  ERROR    ⨯ TypeError: Cannot read properties of undefined (reading 'name')
+[00:52:00.463] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:52:00.634] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'name')
+[00:52:33.265] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:52:33.276] Server  LOG      ✓ Compiled in 267ms
+[00:52:33.687] Server  ERROR    ⨯ TypeError: Cannot read properties of undefined (reading 'name')
+[00:52:33.889] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:52:34.008] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'name')
+[00:52:38.378] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:52:38.550] Server  LOG      ✓ Compiled in 56ms
+[00:52:38.648] Server  ERROR    ⨯ TypeError: Cannot read properties of undefined (reading 'name')
+[00:52:38.808] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:52:38.985] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'name')
+[00:52:40.381] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:52:40.401] Server  LOG      ✓ Compiled in 94ms
+[00:52:40.651] Server  ERROR    ⨯ TypeError: Cannot read properties of undefined (reading 'name')
+[00:52:40.859] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:52:41.035] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'name')
+[00:53:16.196] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:53:16.229] Server  LOG      ✓ Compiled in 52ms
+[00:53:17.003] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:53:17.191] Browser WARN    Image with src "http://localhost:3000/invima.gif" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:53:17.191] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:53:17.191] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:53:17.191] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764032399515}
+[00:57:23.033] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:57:23.035] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:57:27.928] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:57:27.928] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:57:48.081] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:57:48.261] Browser WARN    Image with src "http://localhost:3000/invima.gif" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:57:48.261] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:57:48.261] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:57:48.261] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764032670593}
+[00:57:49.563] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:57:49.563] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:58:10.211] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[00:58:10.211] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[01:01:42.216] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[01:01:42.217] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[01:03:42.012] Server  LOG      ✓ Compiled in 257ms
+[01:03:42.156] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'name')
+[01:04:02.567] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:04:02.582] Server  LOG      ✓ Compiled in 138ms
+[01:04:02.967] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764033045179}
+[01:04:03.259] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:04:03.442] Browser WARN    Image with src "http://localhost:3000/invima.gif" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:04:03.442] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:04:03.442] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[01:04:03.442] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764033045786}
+[01:04:10.265] Server  LOG      ✓ Compiled in 177ms
+[01:04:22.975] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[01:04:22.975] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[01:04:40.943] Server  LOG      ✓ Compiled in 93ms
+[01:04:41.048] Browser ERROR   ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:171:59
+Parsing ecmascript source code failed
+  169 |             </h3>
+  170 |
+> 171 |             <RadioGroup value={paymentMethod} aymentMethod} className="space-y-3">
+      |                                                           ^
+  172 |             <div
+  173 |               className={`flex items-center   space-x-3 border-2 rounded-2xl p-3 md:p-4 cursor-pointer t  ransition-all ${paymentMethod === "pse"
+  174 |                 ? "border-primary bg-primary/5 shadow-md"
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+[01:09:19.272] Server  ERROR    ⨯ ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:171:59
+Parsing ecmascript source code failed
+  169 |             </h3>
+  170 |
+> 171 |             <RadioGroup value={paymentMethod} aymentMethod} className="space-y-3">
+      |                                                           ^
+  172 |             <div
+  173 |               className={`flex items-center   space-x-3 border-2 rounded-2xl p-3 md:p-4 cursor-pointer t  ransition-all ${paymentMethod === "pse"
+  174 |                 ? "border-primary bg-primary/5 shadow-md"
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+
+[01:09:19.389] Browser ERROR   ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:171:59
+Parsing ecmascript source code failed
+  169 |             </h3>
+  170 |
+> 171 |             <RadioGroup value={paymentMethod} aymentMethod} className="space-y-3">
+      |                                                           ^
+  172 |             <div
+  173 |               className={`flex items-center   space-x-3 border-2 rounded-2xl p-3 md:p-4 cursor-pointer t  ransition-all ${paymentMethod === "pse"
+  174 |                 ? "border-primary bg-primary/5 shadow-md"
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+[01:09:19.998] Browser ERROR   ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:171:59
+Parsing ecmascript source code failed
+  169 |             </h3>
+  170 |
+> 171 |             <RadioGroup value={paymentMethod} aymentMethod} className="space-y-3">
+      |                                                           ^
+  172 |             <div
+  173 |               className={`flex items-center   space-x-3 border-2 rounded-2xl p-3 md:p-4 cursor-pointer t  ransition-all ${paymentMethod === "pse"
+  174 |                 ? "border-primary bg-primary/5 shadow-md"
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+[01:09:19.998] Browser ERROR   ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:171:59
+Parsing ecmascript source code failed
+  169 |             </h3>
+  170 |
+> 171 |             <RadioGroup value={paymentMethod} aymentMethod} className="space-y-3">
+      |                                                           ^
+  172 |             <div
+  173 |               className={`flex items-center   space-x-3 border-2 rounded-2xl p-3 md:p-4 cursor-pointer t  ransition-all ${paymentMethod === "pse"
+  174 |                 ? "border-primary bg-primary/5 shadow-md"
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+[01:09:20.220] Browser ERROR   ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:171:59
+Parsing ecmascript source code failed
+  169 |             </h3>
+  170 |
+> 171 |             <RadioGroup value={paymentMethod} aymentMethod} className="space-y-3">
+      |                                                           ^
+  172 |             <div
+  173 |               className={`flex items-center   space-x-3 border-2 rounded-2xl p-3 md:p-4 cursor-pointer t  ransition-all ${paymentMethod === "pse"
+  174 |                 ? "border-primary bg-primary/5 shadow-md"
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+[01:09:20.426] Browser ERROR   uncaughtError: Error: ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:171:59
+Parsing ecmascript source code failed
+  169 |             </h3>
+  170 |
+> 171 |             <RadioGroup value={paymentMethod} aymentMethod} className="space-y-3">
+      |                                                           ^
+  172 |             <div
+  173 |               className={`flex items-center   space-x-3 border-2 rounded-2xl p-3 md:p-4 cursor-pointer t  ransition-all ${paymentMethod === "pse"
+  174 |                 ? "border-primary bg-primary/5 shadow-md"
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+
+[01:09:20.615] Browser ERROR   ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:171:59
+Parsing ecmascript source code failed
+  169 |             </h3>
+  170 |
+> 171 |             <RadioGroup value={paymentMethod} aymentMethod} className="space-y-3">
+      |                                                           ^
+  172 |             <div
+  173 |               className={`flex items-center   space-x-3 border-2 rounded-2xl p-3 md:p-4 cursor-pointer t  ransition-all ${paymentMethod === "pse"
+  174 |                 ? "border-primary bg-primary/5 shadow-md"
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+[01:09:20.615] Browser ERROR   ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:171:59
+Parsing ecmascript source code failed
+  169 |             </h3>
+  170 |
+> 171 |             <RadioGroup value={paymentMethod} aymentMethod} className="space-y-3">
+      |                                                           ^
+  172 |             <div
+  173 |               className={`flex items-center   space-x-3 border-2 rounded-2xl p-3 md:p-4 cursor-pointer t  ransition-all ${paymentMethod === "pse"
+  174 |                 ? "border-primary bg-primary/5 shadow-md"
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/app/checkout/page.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/app/checkout/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/app/checkout/page.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/app/checkout/page.tsx [Server Component]
+[01:09:20.615] Browser ERROR   ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:171:59
+Parsing ecmascript source code failed
+  169 |             </h3>
+  170 |
+> 171 |             <RadioGroup value={paymentMethod} aymentMethod} className="space-y-3">
+      |                                                           ^
+  172 |             <div
+  173 |               className={`flex items-center   space-x-3 border-2 rounded-2xl p-3 md:p-4 cursor-pointer t  ransition-all ${paymentMethod === "pse"
+  174 |                 ? "border-primary bg-primary/5 shadow-md"
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+[01:09:22.232] Browser ERROR   ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:171:59
+Parsing ecmascript source code failed
+  169 |             </h3>
+  170 |
+> 171 |             <RadioGroup value={paymentMethod} aymentMethod} className="space-y-3">
+      |                                                           ^
+  172 |             <div
+  173 |               className={`flex items-center   space-x-3 border-2 rounded-2xl p-3 md:p-4 cursor-pointer t  ransition-all ${paymentMethod === "pse"
+  174 |                 ? "border-primary bg-primary/5 shadow-md"
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+[01:11:50.972] Browser ERROR   ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:190:21
+Parsing ecmascript source code failed
+  188 |                 <Badge variant="outline" className="border-primary/40 text-primary rounded-full text-xs">
+  189 |                   Más usado
+> 190 |               </div>
+      |                     ^
+> 191 |
+      | ^
+> 192 |               <div
+      | ^^^^^^^^^^^^^^^
+  193 |                 className={`flex items-center space-x-3 border-2   rounded-2xl p-3 md:p-4 cursor-pointer transition-all ${pa  ymentMethod === "card"
+  194 |               ? "border-primary bg-primary/5 shadow-md"
+  195 |               : "border-border hover:border-primary/30"
+
+Expected '</', got 'jsx text (
+
+              )'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+[01:12:15.741] Server  ERROR    ⨯ ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:190:21
+Parsing ecmascript source code failed
+  188 |                 <Badge variant="outline" className="border-primary/40 text-primary rounded-full text-xs">
+  189 |                   Más usado
+> 190 |               </div>
+      |                     ^
+> 191 |
+      | ^
+> 192 |               <div
+      | ^^^^^^^^^^^^^^^
+  193 |                 className={`flex items-center space-x-3 border-2   rounded-2xl p-3 md:p-4 cursor-pointer transition-all ${pa  ymentMethod === "card"
+  194 |               ? "border-primary bg-primary/5 shadow-md"
+  195 |               : "border-border hover:border-primary/30"
+
+Expected '</', got 'jsx text (
+
+              )'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+
+[01:12:16.004] Browser ERROR   uncaughtError: Error: ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:190:21
+Parsing ecmascript source code failed
+  188 |                 <Badge variant="outline" className="border-primary/40 text-primary rounded-full text-xs">
+  189 |                   Más usado
+> 190 |               </div>
+      |                     ^
+> 191 |
+      | ^
+> 192 |               <div
+      | ^^^^^^^^^^^^^^^
+  193 |                 className={`flex items-center space-x-3 border-2   rounded-2xl p-3 md:p-4 cursor-pointer transition-all ${pa  ymentMethod === "card"
+  194 |               ? "border-primary bg-primary/5 shadow-md"
+  195 |               : "border-border hover:border-primary/30"
+
+Expected '</', got 'jsx text (
+
+              )'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+
+[01:12:16.173] Browser ERROR   ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:190:21
+Parsing ecmascript source code failed
+  188 |                 <Badge variant="outline" className="border-primary/40 text-primary rounded-full text-xs">
+  189 |                   Más usado
+> 190 |               </div>
+      |                     ^
+> 191 |
+      | ^
+> 192 |               <div
+      | ^^^^^^^^^^^^^^^
+  193 |                 className={`flex items-center space-x-3 border-2   rounded-2xl p-3 md:p-4 cursor-pointer transition-all ${pa  ymentMethod === "card"
+  194 |               ? "border-primary bg-primary/5 shadow-md"
+  195 |               : "border-border hover:border-primary/30"
+
+Expected '</', got 'jsx text (
+
+              )'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+[01:12:16.173] Browser ERROR   ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:190:21
+Parsing ecmascript source code failed
+  188 |                 <Badge variant="outline" className="border-primary/40 text-primary rounded-full text-xs">
+  189 |                   Más usado
+> 190 |               </div>
+      |                     ^
+> 191 |
+      | ^
+> 192 |               <div
+      | ^^^^^^^^^^^^^^^
+  193 |                 className={`flex items-center space-x-3 border-2   rounded-2xl p-3 md:p-4 cursor-pointer transition-all ${pa  ymentMethod === "card"
+  194 |               ? "border-primary bg-primary/5 shadow-md"
+  195 |               : "border-border hover:border-primary/30"
+
+Expected '</', got 'jsx text (
+
+              )'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/app/checkout/page.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/app/checkout/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/app/checkout/page.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/app/checkout/page.tsx [Server Component]
+[01:12:16.173] Browser ERROR   ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:190:21
+Parsing ecmascript source code failed
+  188 |                 <Badge variant="outline" className="border-primary/40 text-primary rounded-full text-xs">
+  189 |                   Más usado
+> 190 |               </div>
+      |                     ^
+> 191 |
+      | ^
+> 192 |               <div
+      | ^^^^^^^^^^^^^^^
+  193 |                 className={`flex items-center space-x-3 border-2   rounded-2xl p-3 md:p-4 cursor-pointer transition-all ${pa  ymentMethod === "card"
+  194 |               ? "border-primary bg-primary/5 shadow-md"
+  195 |               : "border-border hover:border-primary/30"
+
+Expected '</', got 'jsx text (
+
+              )'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+[01:12:16.953] Server  ERROR    ⨯ ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:190:21
+Parsing ecmascript source code failed
+  188 |                 <Badge variant="outline" className="border-primary/40 text-primary rounded-full text-xs">
+  189 |                   Más usado
+> 190 |               </div>
+      |                     ^
+> 191 |
+      | ^
+> 192 |               <div
+      | ^^^^^^^^^^^^^^^
+  193 |                 className={`flex items-center space-x-3 border-2   rounded-2xl p-3 md:p-4 cursor-pointer transition-all ${pa  ymentMethod === "card"
+  194 |               ? "border-primary bg-primary/5 shadow-md"
+  195 |               : "border-border hover:border-primary/30"
+
+Expected '</', got 'jsx text (
+
+              )'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+
+[01:12:17.070] Browser ERROR   uncaughtError: Error: ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:190:21
+Parsing ecmascript source code failed
+  188 |                 <Badge variant="outline" className="border-primary/40 text-primary rounded-full text-xs">
+  189 |                   Más usado
+> 190 |               </div>
+      |                     ^
+> 191 |
+      | ^
+> 192 |               <div
+      | ^^^^^^^^^^^^^^^
+  193 |                 className={`flex items-center space-x-3 border-2   rounded-2xl p-3 md:p-4 cursor-pointer transition-all ${pa  ymentMethod === "card"
+  194 |               ? "border-primary bg-primary/5 shadow-md"
+  195 |               : "border-border hover:border-primary/30"
+
+Expected '</', got 'jsx text (
+
+              )'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+
+[01:12:17.207] Browser ERROR   ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:190:21
+Parsing ecmascript source code failed
+  188 |                 <Badge variant="outline" className="border-primary/40 text-primary rounded-full text-xs">
+  189 |                   Más usado
+> 190 |               </div>
+      |                     ^
+> 191 |
+      | ^
+> 192 |               <div
+      | ^^^^^^^^^^^^^^^
+  193 |                 className={`flex items-center space-x-3 border-2   rounded-2xl p-3 md:p-4 cursor-pointer transition-all ${pa  ymentMethod === "card"
+  194 |               ? "border-primary bg-primary/5 shadow-md"
+  195 |               : "border-border hover:border-primary/30"
+
+Expected '</', got 'jsx text (
+
+              )'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+[01:12:17.207] Browser ERROR   ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:190:21
+Parsing ecmascript source code failed
+  188 |                 <Badge variant="outline" className="border-primary/40 text-primary rounded-full text-xs">
+  189 |                   Más usado
+> 190 |               </div>
+      |                     ^
+> 191 |
+      | ^
+> 192 |               <div
+      | ^^^^^^^^^^^^^^^
+  193 |                 className={`flex items-center space-x-3 border-2   rounded-2xl p-3 md:p-4 cursor-pointer transition-all ${pa  ymentMethod === "card"
+  194 |               ? "border-primary bg-primary/5 shadow-md"
+  195 |               : "border-border hover:border-primary/30"
+
+Expected '</', got 'jsx text (
+
+              )'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/app/checkout/page.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/app/checkout/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/app/checkout/page.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/app/checkout/page.tsx [Server Component]
+[01:12:17.207] Browser ERROR   ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:190:21
+Parsing ecmascript source code failed
+  188 |                 <Badge variant="outline" className="border-primary/40 text-primary rounded-full text-xs">
+  189 |                   Más usado
+> 190 |               </div>
+      |                     ^
+> 191 |
+      | ^
+> 192 |               <div
+      | ^^^^^^^^^^^^^^^
+  193 |                 className={`flex items-center space-x-3 border-2   rounded-2xl p-3 md:p-4 cursor-pointer transition-all ${pa  ymentMethod === "card"
+  194 |               ? "border-primary bg-primary/5 shadow-md"
+  195 |               : "border-border hover:border-primary/30"
+
+Expected '</', got 'jsx text (
+
+              )'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+[01:12:18.755] Browser ERROR   ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:190:21
+Parsing ecmascript source code failed
+  188 |                 <Badge variant="outline" className="border-primary/40 text-primary rounded-full text-xs">
+  189 |                   Más usado
+> 190 |               </div>
+      |                     ^
+> 191 |
+      | ^
+> 192 |               <div
+      | ^^^^^^^^^^^^^^^
+  193 |                 className={`flex items-center space-x-3 border-2   rounded-2xl p-3 md:p-4 cursor-pointer transition-all ${pa  ymentMethod === "card"
+  194 |               ? "border-primary bg-primary/5 shadow-md"
+  195 |               : "border-border hover:border-primary/30"
+
+Expected '</', got 'jsx text (
+
+              )'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+[01:12:51.309] Browser ERROR   ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:191:23
+Parsing ecmascript source code failed
+  189 |                   Más usado
+  190 |                 </Badge>
+> 191 |               </Label>
+      |                       ^
+> 192 |           </div>
+      | ^^^^^^^^^^^
+  193 |
+  194 |           <div
+  195 |             className={`flex items-center space-x-3 border-2 rounded-2xl p-3 md:p-4 cursor-pointer transition-all ${paymentMethod === "card"
+
+Expected '</', got 'jsx text (
+          )'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+[01:13:39.350] Browser ERROR   ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:191:23
+Parsing ecmascript source code failed
+  189 |                   Más usado
+  190 |                 </Badge>
+> 191 |               </Label>
+      |                       ^
+> 192 |           </div>
+      | ^^^^^^^^^^^
+  193 |
+  194 |           <div
+  195 |             className={`flex items-center space-x-3 border-2 rounded-2xl p-3 md:p-4 cursor-pointer transition-all ${paymentMethod === "card"
+
+Expected '</', got 'jsx text (
+          )'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+[01:13:54.849] Server  ERROR    ⨯ ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:191:23
+Parsing ecmascript source code failed
+  189 |                   Más usado
+  190 |                 </Badge>
+> 191 |               </Label>
+      |                       ^
+> 192 |           </div>
+      | ^^^^^^^^^^^
+  193 |
+  194 |           <div
+  195 |             className={`flex items-center space-x-3 border-2 rounded-2xl p-3 md:p-4 cursor-pointer transition-all ${paymentMethod === "card"
+
+Expected '</', got 'jsx text (
+          )'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+
+[01:13:55.297] Browser ERROR   uncaughtError: Error: ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:191:23
+Parsing ecmascript source code failed
+  189 |                   Más usado
+  190 |                 </Badge>
+> 191 |               </Label>
+      |                       ^
+> 192 |           </div>
+      | ^^^^^^^^^^^
+  193 |
+  194 |           <div
+  195 |             className={`flex items-center space-x-3 border-2 rounded-2xl p-3 md:p-4 cursor-pointer transition-all ${paymentMethod === "card"
+
+Expected '</', got 'jsx text (
+          )'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+
+[01:13:55.455] Browser ERROR   ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:191:23
+Parsing ecmascript source code failed
+  189 |                   Más usado
+  190 |                 </Badge>
+> 191 |               </Label>
+      |                       ^
+> 192 |           </div>
+      | ^^^^^^^^^^^
+  193 |
+  194 |           <div
+  195 |             className={`flex items-center space-x-3 border-2 rounded-2xl p-3 md:p-4 cursor-pointer transition-all ${paymentMethod === "card"
+
+Expected '</', got 'jsx text (
+          )'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+[01:13:55.455] Browser ERROR   ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:191:23
+Parsing ecmascript source code failed
+  189 |                   Más usado
+  190 |                 </Badge>
+> 191 |               </Label>
+      |                       ^
+> 192 |           </div>
+      | ^^^^^^^^^^^
+  193 |
+  194 |           <div
+  195 |             className={`flex items-center space-x-3 border-2 rounded-2xl p-3 md:p-4 cursor-pointer transition-all ${paymentMethod === "card"
+
+Expected '</', got 'jsx text (
+          )'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/app/checkout/page.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/app/checkout/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/app/checkout/page.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/app/checkout/page.tsx [Server Component]
+[01:13:55.455] Browser ERROR   ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:191:23
+Parsing ecmascript source code failed
+  189 |                   Más usado
+  190 |                 </Badge>
+> 191 |               </Label>
+      |                       ^
+> 192 |           </div>
+      | ^^^^^^^^^^^
+  193 |
+  194 |           <div
+  195 |             className={`flex items-center space-x-3 border-2 rounded-2xl p-3 md:p-4 cursor-pointer transition-all ${paymentMethod === "card"
+
+Expected '</', got 'jsx text (
+          )'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+[01:13:57.116] Browser ERROR   ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:191:23
+Parsing ecmascript source code failed
+  189 |                   Más usado
+  190 |                 </Badge>
+> 191 |               </Label>
+      |                       ^
+> 192 |           </div>
+      | ^^^^^^^^^^^
+  193 |
+  194 |           <div
+  195 |             className={`flex items-center space-x-3 border-2 rounded-2xl p-3 md:p-4 cursor-pointer transition-all ${paymentMethod === "card"
+
+Expected '</', got 'jsx text (
+          )'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+[01:14:18.951] Server  LOG      ✓ Compiled in 165ms
+[01:14:19.730] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:14:20.163] Browser WARN    Image with src "http://localhost:3000/invima.gif" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:14:20.163] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:14:20.163] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[01:14:20.163] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764033662371}
+[01:14:21.294] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[01:14:21.294] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[01:14:51.312] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:14:51.525] Browser WARN    Image with src "http://localhost:3000/invima.gif" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:14:51.525] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:14:51.525] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[01:14:51.525] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764033693869}
+[01:14:52.214] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[01:14:52.214] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[01:14:55.024] Server  LOG      ✓ Compiled in 132ms
+[01:14:55.132] Browser ERROR   ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:171:59
+Parsing ecmascript source code failed
+  169 |             </h3>
+  170 |
+> 171 |             <RadioGroup value={paymentMethod} aymentMethod} className="space-y-3">
+      |                                                           ^
+  172 |             <div
+  173 |               className={`flex items-center   space-x-3 border-2 rounded-2xl p-3 md:p-4 cursor-pointer t  ransition-all ${paymentMethod === "pse"
+  174 |                 ? "border-primary bg-primary/5 shadow-md"
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+[01:15:27.663] Server  ERROR    ⨯ ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:171:59
+Parsing ecmascript source code failed
+  169 |             </h3>
+  170 |
+> 171 |             <RadioGroup value={paymentMethod} aymentMethod} className="space-y-3">
+      |                                                           ^
+  172 |             <div
+  173 |               className={`flex items-center   space-x-3 border-2 rounded-2xl p-3 md:p-4 cursor-pointer t  ransition-all ${paymentMethod === "pse"
+  174 |                 ? "border-primary bg-primary/5 shadow-md"
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+
+[01:15:27.871] Browser ERROR   uncaughtError: Error: ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:171:59
+Parsing ecmascript source code failed
+  169 |             </h3>
+  170 |
+> 171 |             <RadioGroup value={paymentMethod} aymentMethod} className="space-y-3">
+      |                                                           ^
+  172 |             <div
+  173 |               className={`flex items-center   space-x-3 border-2 rounded-2xl p-3 md:p-4 cursor-pointer t  ransition-all ${paymentMethod === "pse"
+  174 |                 ? "border-primary bg-primary/5 shadow-md"
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+
+[01:15:28.036] Browser ERROR   ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:171:59
+Parsing ecmascript source code failed
+  169 |             </h3>
+  170 |
+> 171 |             <RadioGroup value={paymentMethod} aymentMethod} className="space-y-3">
+      |                                                           ^
+  172 |             <div
+  173 |               className={`flex items-center   space-x-3 border-2 rounded-2xl p-3 md:p-4 cursor-pointer t  ransition-all ${paymentMethod === "pse"
+  174 |                 ? "border-primary bg-primary/5 shadow-md"
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+[01:15:28.036] Browser ERROR   ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:171:59
+Parsing ecmascript source code failed
+  169 |             </h3>
+  170 |
+> 171 |             <RadioGroup value={paymentMethod} aymentMethod} className="space-y-3">
+      |                                                           ^
+  172 |             <div
+  173 |               className={`flex items-center   space-x-3 border-2 rounded-2xl p-3 md:p-4 cursor-pointer t  ransition-all ${paymentMethod === "pse"
+  174 |                 ? "border-primary bg-primary/5 shadow-md"
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/app/checkout/page.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/app/checkout/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/app/checkout/page.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/app/checkout/page.tsx [Server Component]
+[01:15:28.036] Browser ERROR   ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:171:59
+Parsing ecmascript source code failed
+  169 |             </h3>
+  170 |
+> 171 |             <RadioGroup value={paymentMethod} aymentMethod} className="space-y-3">
+      |                                                           ^
+  172 |             <div
+  173 |               className={`flex items-center   space-x-3 border-2 rounded-2xl p-3 md:p-4 cursor-pointer t  ransition-all ${paymentMethod === "pse"
+  174 |                 ? "border-primary bg-primary/5 shadow-md"
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+[01:15:29.736] Browser ERROR   ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:171:59
+Parsing ecmascript source code failed
+  169 |             </h3>
+  170 |
+> 171 |             <RadioGroup value={paymentMethod} aymentMethod} className="space-y-3">
+      |                                                           ^
+  172 |             <div
+  173 |               className={`flex items-center   space-x-3 border-2 rounded-2xl p-3 md:p-4 cursor-pointer t  ransition-all ${paymentMethod === "pse"
+  174 |                 ? "border-primary bg-primary/5 shadow-md"
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+[01:16:10.959] Server  ERROR    ⨯ ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:171:59
+Parsing ecmascript source code failed
+  169 |             </h3>
+  170 |
+> 171 |             <RadioGroup value={paymentMethod} aymentMethod} className="space-y-3">
+      |                                                           ^
+  172 |             <div
+  173 |               className={`flex items-center   space-x-3 border-2 rounded-2xl p-3 md:p-4 cursor-pointer t  ransition-all ${paymentMethod === "pse"
+  174 |                 ? "border-primary bg-primary/5 shadow-md"
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+
+[01:16:11.142] Browser ERROR   uncaughtError: Error: ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:171:59
+Parsing ecmascript source code failed
+  169 |             </h3>
+  170 |
+> 171 |             <RadioGroup value={paymentMethod} aymentMethod} className="space-y-3">
+      |                                                           ^
+  172 |             <div
+  173 |               className={`flex items-center   space-x-3 border-2 rounded-2xl p-3 md:p-4 cursor-pointer t  ransition-all ${paymentMethod === "pse"
+  174 |                 ? "border-primary bg-primary/5 shadow-md"
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+
+[01:16:11.289] Browser ERROR   ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:171:59
+Parsing ecmascript source code failed
+  169 |             </h3>
+  170 |
+> 171 |             <RadioGroup value={paymentMethod} aymentMethod} className="space-y-3">
+      |                                                           ^
+  172 |             <div
+  173 |               className={`flex items-center   space-x-3 border-2 rounded-2xl p-3 md:p-4 cursor-pointer t  ransition-all ${paymentMethod === "pse"
+  174 |                 ? "border-primary bg-primary/5 shadow-md"
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+[01:16:11.289] Browser ERROR   ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:171:59
+Parsing ecmascript source code failed
+  169 |             </h3>
+  170 |
+> 171 |             <RadioGroup value={paymentMethod} aymentMethod} className="space-y-3">
+      |                                                           ^
+  172 |             <div
+  173 |               className={`flex items-center   space-x-3 border-2 rounded-2xl p-3 md:p-4 cursor-pointer t  ransition-all ${paymentMethod === "pse"
+  174 |                 ? "border-primary bg-primary/5 shadow-md"
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/app/checkout/page.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/app/checkout/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/app/checkout/page.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/app/checkout/page.tsx [Server Component]
+[01:16:11.289] Browser ERROR   ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:171:59
+Parsing ecmascript source code failed
+  169 |             </h3>
+  170 |
+> 171 |             <RadioGroup value={paymentMethod} aymentMethod} className="space-y-3">
+      |                                                           ^
+  172 |             <div
+  173 |               className={`flex items-center   space-x-3 border-2 rounded-2xl p-3 md:p-4 cursor-pointer t  ransition-all ${paymentMethod === "pse"
+  174 |                 ? "border-primary bg-primary/5 shadow-md"
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+[01:16:12.846] Browser ERROR   ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:171:59
+Parsing ecmascript source code failed
+  169 |             </h3>
+  170 |
+> 171 |             <RadioGroup value={paymentMethod} aymentMethod} className="space-y-3">
+      |                                                           ^
+  172 |             <div
+  173 |               className={`flex items-center   space-x-3 border-2 rounded-2xl p-3 md:p-4 cursor-pointer t  ransition-all ${paymentMethod === "pse"
+  174 |                 ? "border-primary bg-primary/5 shadow-md"
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+[01:16:38.175] Browser ERROR   ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:190:21
+Parsing ecmascript source code failed
+  188 |                 <Badge variant="outline" className="border-primary/40 text-primary rounded-full text-xs">
+  189 |                   Más usado
+> 190 |               </div>
+      |                     ^
+> 191 |
+      | ^
+> 192 |               <div
+      | ^^^^^^^^^^^^^^^
+  193 |                 className={`flex items-center space-x-3 border-2   rounded-2xl p-3 md:p-4 cursor-pointer transition-all ${pa  ymentMethod === "card"
+  194 |               ? "border-primary bg-primary/5 shadow-md"
+  195 |               : "border-border hover:border-primary/30"
+
+Expected '</', got 'jsx text (
+
+              )'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+[01:17:11.867] Server  LOG      ✓ Compiled in 86ms
+[01:17:12.614] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:17:12.875] Browser WARN    Image with src "http://localhost:3000/invima.gif" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:17:12.875] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:17:12.875] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[01:17:12.875] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764033835224}
+[01:17:15.744] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[01:17:15.744] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[01:17:30.106] Server  LOG      ✓ Compiled in 81ms
+[01:17:30.216] Browser ERROR   ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:171:59
+Parsing ecmascript source code failed
+  169 |             </h3>
+  170 |
+> 171 |             <RadioGroup value={paymentMethod} aymentMethod} className="space-y-3">
+      |                                                           ^
+  172 |             <div
+  173 |               className={`flex items-center   space-x-3 border-2 rounded-2xl p-3 md:p-4 cursor-pointer t  ransition-all ${paymentMethod === "pse"
+  174 |                 ? "border-primary bg-primary/5 shadow-md"
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+[01:17:33.865] Server  LOG      ✓ Compiled in 54ms
+[01:17:45.762] Server  LOG      ✓ Compiled in 97ms
+[01:17:45.870] Browser ERROR   ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:171:59
+Parsing ecmascript source code failed
+  169 |             </h3>
+  170 |
+> 171 |             <RadioGroup value={paymentMethod} aymentMethod} className="space-y-3">
+      |                                                           ^
+  172 |             <div
+  173 |               className={`flex items-center   space-x-3 border-2 rounded-2xl p-3 md:p-4 cursor-pointer t  ransition-all ${paymentMethod === "pse"
+  174 |                 ? "border-primary bg-primary/5 shadow-md"
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+[01:17:48.752] Server  LOG      ✓ Compiled in 51ms
+[01:17:48.859] Browser ERROR   ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:171:59
+Parsing ecmascript source code failed
+  169 |             </h3>
+  170 |
+> 171 |             <RadioGroup value={paymentMethod} aymentMethod} className="space-y-3">
+      |                                                           ^
+  172 |             <div
+  173 |               className={`flex items-center   space-x-3 border-2 rounded-2xl p-3 md:p-4 cursor-pointer t  ransition-all ${paymentMethod === "pse"
+  174 |                 ? "border-primary bg-primary/5 shadow-md"
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+[01:17:49.013] Browser ERROR   ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:171:59
+Parsing ecmascript source code failed
+  169 |             </h3>
+  170 |
+> 171 |             <RadioGroup value={paymentMethod} aymentMethod} className="space-y-3">
+      |                                                           ^
+  172 |             <div
+  173 |               className={`flex items-center   space-x-3 border-2 rounded-2xl p-3 md:p-4 cursor-pointer t  ransition-all ${paymentMethod === "pse"
+  174 |                 ? "border-primary bg-primary/5 shadow-md"
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+[01:17:49.157] Browser ERROR   ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:171:59
+Parsing ecmascript source code failed
+  169 |             </h3>
+  170 |
+> 171 |             <RadioGroup value={paymentMethod} aymentMethod} className="space-y-3">
+      |                                                           ^
+  172 |             <div
+  173 |               className={`flex items-center   space-x-3 border-2 rounded-2xl p-3 md:p-4 cursor-pointer t  ransition-all ${paymentMethod === "pse"
+  174 |                 ? "border-primary bg-primary/5 shadow-md"
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+[01:17:59.269] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:17:59.455] Browser WARN    Image with src "http://localhost:3000/invima.gif" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:17:59.455] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:17:59.455] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[01:17:59.455] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764033881804}
+[01:18:00.904] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[01:18:00.904] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[01:18:05.277] Server  LOG      ✓ Compiled in 51ms
+[01:18:05.380] Browser ERROR   ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx:190:21
+Parsing ecmascript source code failed
+  188 |                 <Badge variant="outline" className="border-primary/40 text-primary rounded-full text-xs">
+  189 |                   Más usado
+> 190 |               </div>
+      |                     ^
+> 191 |
+      | ^
+> 192 |               <div
+      | ^^^^^^^^^^^^^^^
+  193 |                 className={`flex items-center space-x-3 border-2   rounded-2xl p-3 md:p-4 cursor-pointer transition-all ${pa  ymentMethod === "card"
+  194 |               ? "border-primary bg-primary/5 shadow-md"
+  195 |               : "border-border hover:border-primary/30"
+
+Expected '</', got 'jsx text (
+
+              )'
+
+Import traces:
+  Client Component Browser:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component Browser]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Documents/repos/v0-amazonico-landing-page/components/checkout-modal.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Client Component SSR]
+    ./Documents/repos/v0-amazonico-landing-page/components/pricing-section.tsx [Server Component]
+    ./Documents/repos/v0-amazonico-landing-page/app/page.tsx [Server Component]
+[01:18:16.561] Server  LOG      ✓ Compiled in 55ms
+[01:18:16.657] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'name')
+[01:18:24.751] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:18:24.766] Server  LOG      ✓ Compiled in 93ms
+[01:18:25.451] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764033907325}
+[01:18:25.633] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:18:25.858] Browser WARN    Image with src "http://localhost:3000/invima.gif" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:18:25.858] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:18:25.858] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[01:18:25.858] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764033908207}
+[01:18:26.740] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[01:18:26.740] Browser WARN    Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+[01:19:08.357] Server  LOG     URL de checkout generada: "https://checkout.wompi.co/p/?public-key=pub_test_U8XbzsdEWaIR1vXje0LKuGf4yQjcehH2&currency=COP&amount-in-cents=9000000&reference=AMAZONIICO-1764033950741-zo27dwni7&redirect-url=http%3A%2F%2Flocalhost%3A3000%2Fcheckout%2Fsuccess%3Freference%3DAMAZONIICO-1764033950741-zo27dwni7&customer-data%3Aemail=cero1studio%40gmail.com&customer-data%3Afull-name=javier+mayorga&customer-data%3Aphone-number=3014575984&customer-data%3Alegal-id=1073686215&customer-data%3Alegal-id-type=CC&payment-method=PSE"
+[01:19:08.358] Server  LOG     Método de pago preseleccionado: "PSE"
+[01:19:08.366] Browser LOG     Respuesta completa de la API: {"checkoutUrl":"https://checkout.wompi.co/p/?public-key=pub_test_U8XbzsdEWaIR1vXje0LKuGf4yQjcehH2&currency=COP&amount-in-cents=9000000&reference=AMAZONIICO-1764033950741-zo27dwni7&redirect-url=http%3A%2F%2Flocalhost%3A3000%2Fcheckout%2Fsuccess%3Freference%3DAMAZONIICO-1764033950741-zo27dwni7&customer-data%3Aemail=cero1studio%40gmail.com&customer-data%3Afull-name=javier+mayorga&customer-data%3Aphone-number=3014575984&customer-data%3Alegal-id=1073686215&customer-data%3Alegal-id-type=CC&payment-method=PSE","reference":"AMAZONIICO-1764033950741-zo27dwni7","sessionId":"AMAZONIICO-1764033950741-zo27dwni7"}
+[01:19:08.366] Browser LOG     Redirigiendo a: https://checkout.wompi.co/p/?public-key=pub_test_U8XbzsdEWaIR1vXje0LKuGf4yQjcehH2&currency=COP&amount-in-cents=9000000&reference=AMAZONIICO-1764033950741-zo27dwni7&redirect-url=http%3A%2F%2Flocalhost%3A3000%2Fcheckout%2Fsuccess%3Freference%3DAMAZONIICO-1764033950741-zo27dwni7&customer-data%3Aemail=cero1studio%40gmail.com&customer-data%3Afull-name=javier+mayorga&customer-data%3Aphone-number=3014575984&customer-data%3Alegal-id=1073686215&customer-data%3Alegal-id-type=CC&payment-method=PSE
+[01:20:03.467] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:20:03.840] Browser WARN    Image with src "http://localhost:3000/invima.gif" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:20:03.840] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:20:03.840] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[01:20:03.840] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1764034006193}

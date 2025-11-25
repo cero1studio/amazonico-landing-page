@@ -1,7 +1,25 @@
+import { Navbar } from "@/components/navbar"
+import { Footer } from "@/components/footer"
+import { Button } from "@/components/ui/button"
+import { ArrowLeft } from "lucide-react"
+import Link from "next/link"
+
 export default function TerminosPage() {
   return (
-    <div className="container mx-auto px-4 py-16 md:py-24 max-w-4xl">
-      <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-balance">Términos y Condiciones</h1>
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+      <div className="flex-1 container mx-auto px-4 py-16 md:py-24 max-w-4xl">
+        <Button
+          asChild
+          variant="ghost"
+          className="mb-6 -ml-4"
+        >
+          <Link href="/" className="flex items-center gap-2">
+            <ArrowLeft className="h-4 w-4" />
+            Volver al inicio
+          </Link>
+        </Button>
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-balance">Términos y Condiciones</h1>
 
       <div className="prose prose-slate dark:prose-invert max-w-none space-y-6 text-muted-foreground">
         <section>
@@ -77,8 +95,10 @@ export default function TerminosPage() {
           <p className="leading-relaxed">Para consultas sobre estos términos, contáctenos a: info@amazoniico.com</p>
         </section>
 
-        <p className="text-sm mt-8 pt-8 border-t border-border">Última actualización: Noviembre 2024</p>
+        <p className="text-sm mt-8 pt-8 border-t border-border">Última actualización: Enero 2025</p>
       </div>
+      </div>
+      <Footer />
     </div>
   )
 }

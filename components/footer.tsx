@@ -85,11 +85,11 @@ export function Footer() {
             <ul className="space-y-2 md:space-y-3 text-xs md:text-sm">
               <li className="flex items-center gap-2 opacity-90">
                 <Phone className="h-3 w-3 md:h-4 md:w-4 flex-shrink-0" />
-                <span>+57 300 123 4567</span>
+                <span>+57 3245020012</span>
               </li>
               <li className="flex items-center gap-2 opacity-90">
                 <Mail className="h-3 w-3 md:h-4 md:w-4 flex-shrink-0" />
-                <span>hola@amazoniico.co</span>
+                <span>servicio_cliente@amazoniico.com</span>
               </li>
               <li className="flex items-center gap-2 opacity-90">
                 <MapPin className="h-3 w-3 md:h-4 md:w-4 flex-shrink-0" />

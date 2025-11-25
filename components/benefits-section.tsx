@@ -1,6 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Sparkles, Zap, Shield, Heart, Clock, TrendingUp } from "lucide-react"
-import Image from "next/image"
 
 const benefits = [
   {
@@ -10,10 +9,10 @@ const benefits = [
       "Reduce visiblemente arrugas y líneas de expresión. Piel más hidratada, suave y con brillo natural desde la primera semana.",
   },
   {
-    icon: Zap,
-    title: "Absorción Superior 95%",
+    icon: Heart,
+    title: "Articulaciones Sin Dolor",
     description:
-      "Colágeno hidrolizado de bajo peso molecular. Tu cuerpo lo absorbe rápidamente para resultados efectivos y duraderos.",
+      "Reduce dolor articular y mejora flexibilidad. Ideal para deportistas y personas con artritis. Recupera tu libertad de movimiento.",
   },
   {
     icon: Shield,
@@ -22,10 +21,10 @@ const benefits = [
       "Fortalece desde la raíz. Detiene la caída del cabello, promueve crecimiento y uñas resistentes que no se quiebran.",
   },
   {
-    icon: Heart,
-    title: "Movilidad Sin Dolor",
+    icon: Zap,
+    title: "Absorción Rápida y Efectiva",
     description:
-      "Reduce dolor articular y mejora flexibilidad. Ideal para deportistas y personas con artritis. Recupera tu libertad de movimiento.",
+      "Colágeno hidrolizado de bajo peso molecular que tu cuerpo absorbe rápidamente para resultados visibles en menos tiempo.",
   },
   {
     icon: Clock,
@@ -47,14 +46,14 @@ export function BenefitsSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-balance">
-            ¿Qué Lograrás con <span className="text-primary">Amazoniico</span>?
+            ¿Qué Lograrás con nuestro <span className="text-primary">Colágeno</span>?
           </h2>
           <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
             Beneficios comprobados científicamente para tu salud y bienestar
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8 mb-12 md:mb-16">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
           {benefits.map((benefit, index) => (
             <Card
               key={index}
@@ -69,16 +68,6 @@ export function BenefitsSection() {
               </CardContent>
             </Card>
           ))}
-        </div>
-
-        <div className="mt-12 md:mt-16 rounded-3xl overflow-hidden shadow-2xl border border-border">
-          <Image
-            src="/product-lifestyle.jpeg"
-            alt="Mujer usando Amazoniico Colágeno"
-            width={1200}
-            height={600}
-            className="w-full h-auto object-cover"
-          />
         </div>
       </div>
     </section>
