@@ -44,12 +44,18 @@ export function PricingSection() {
   const [addedProductId, setAddedProductId] = useState<number | null>(null)
 
   const handleAddToCart = (option: (typeof pricingOptions)[0]) => {
+    // Extraer peso y porciones de las features
+    const weightMatch = option.features[0]?.match(/(\d+g)/)
+    const portionsMatch = option.features[0]?.match(/\((\d+)\s+porciones?\)/i)
+    
     addToCart({
       id: option.id,
       name: option.name,
       price: option.price,
       originalPrice: option.originalPrice,
       savings: option.savings,
+      weight: weightMatch ? weightMatch[1] : "500g",
+      portions: portionsMatch ? parseInt(portionsMatch[1]) : (option.id === 1 ? 17 : 34),
     })
     setAddedProductId(option.id)
     setTimeout(() => setAddedProductId(null), 2000)

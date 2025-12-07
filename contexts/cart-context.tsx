@@ -9,6 +9,8 @@ export interface CartItem {
   originalPrice: number
   quantity: number
   savings: number
+  weight?: string // Ej: "500g"
+  portions?: number // Ej: 17 o 34
 }
 
 interface CartContextType {

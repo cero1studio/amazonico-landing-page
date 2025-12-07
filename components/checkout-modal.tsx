@@ -185,6 +185,10 @@ export function CheckoutModal({
         return updated
       } else {
         // Si no existe, agregar nuevo
+        // Extraer peso y porciones de las features
+        const weightMatch = option.features[0]?.match(/(\d+g)/)
+        const portionsMatch = option.features[0]?.match(/\((\d+)\s+porciones?\)/i)
+        
         return [...prev, {
           id: option.id,
           name: option.name,
@@ -192,6 +196,8 @@ export function CheckoutModal({
           originalPrice: option.originalPrice,
           quantity: quantity,
           savings: option.savings,
+          weight: weightMatch ? weightMatch[1] : "500g",
+          portions: portionsMatch ? parseInt(portionsMatch[1]) : (option.id === 1 ? 17 : 34),
         }]
       }
     })
@@ -375,6 +381,13 @@ export function CheckoutModal({
                       <div className="flex-1 min-w-0">
                         <h5 className="font-semibold text-sm sm:text-base">{product.name}</h5>
                         <p className="text-xs sm:text-sm text-muted-foreground">Amazoniico Colágeno Marino</p>
+                        {(product.weight || product.portions) && (
+                          <p className="text-xs text-muted-foreground mt-0.5">
+                            {product.weight && `${product.weight}`}
+                            {product.weight && product.portions && " • "}
+                            {product.portions && `${product.portions} porciones`}
+                          </p>
+                        )}
                       </div>
                       <div className="flex items-center justify-between sm:justify-end gap-3">
                         <div className="flex items-center gap-2 border rounded-lg">
@@ -664,6 +677,13 @@ export function CheckoutModal({
                     {items.map(item => `${item.quantity}x ${item.name}`).join(", ")}
                   </h3>
                   <p className="text-xs sm:text-sm text-muted-foreground">Amazoniico Colágeno Marino</p>
+                  {items.length === 1 && items[0] && (items[0].weight || items[0].portions) && (
+                    <p className="text-xs text-muted-foreground/70 mt-0.5">
+                      {items[0].weight && `${items[0].weight}`}
+                      {items[0].weight && items[0].portions && " • "}
+                      {items[0].portions && `${items[0].portions} porciones`}
+                    </p>
+                  )}
                 </div>
                 <Badge className="bg-accent text-accent-foreground rounded-full text-xs sm:text-sm w-fit">
                   Envío GRATIS
@@ -673,7 +693,16 @@ export function CheckoutModal({
                 <div className="space-y-1.5 mb-2 pt-2 border-t border-primary/20">
                   {items.map((item) => (
                     <div key={item.id} className="flex justify-between text-xs sm:text-sm">
-                      <span className="text-muted-foreground">{item.quantity}x {item.name}</span>
+                      <div className="flex-1 min-w-0">
+                        <span className="text-muted-foreground">{item.quantity}x {item.name}</span>
+                        {(item.weight || item.portions) && (
+                          <span className="text-muted-foreground/70 ml-1">
+                            ({item.weight && `${item.weight}`}
+                            {item.weight && item.portions && " • "}
+                            {item.portions && `${item.portions} porc.`})
+                          </span>
+                        )}
+                      </div>
                       <span className="font-medium">${(item.price * item.quantity).toLocaleString("es-CO")}</span>
                     </div>
                   ))}
@@ -715,6 +744,13 @@ export function CheckoutModal({
                     {items.map(item => `${item.quantity}x ${item.name}`).join(", ")}
                   </h3>
                   <p className="text-xs sm:text-sm text-muted-foreground">Amazoniico Colágeno Marino</p>
+                  {items.length === 1 && items[0] && (items[0].weight || items[0].portions) && (
+                    <p className="text-xs text-muted-foreground/70 mt-0.5">
+                      {items[0].weight && `${items[0].weight}`}
+                      {items[0].weight && items[0].portions && " • "}
+                      {items[0].portions && `${items[0].portions} porciones`}
+                    </p>
+                  )}
                 </div>
                 <Badge className="bg-accent text-accent-foreground rounded-full text-xs sm:text-sm w-fit">
                   Envío GRATIS

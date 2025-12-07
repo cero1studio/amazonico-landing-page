@@ -81,6 +81,13 @@ export function CartSidebar({ open, onOpenChange }: CartSidebarProps) {
                   >
                     <div className="flex-1 space-y-2 min-w-0">
                       <h4 className="font-semibold text-sm sm:text-base">{item.name}</h4>
+                      {(item.weight || item.portions) && (
+                        <p className="text-xs sm:text-sm text-muted-foreground">
+                          {item.weight && `${item.weight}`}
+                          {item.weight && item.portions && " • "}
+                          {item.portions && `${item.portions} porciones`}
+                        </p>
+                      )}
                       <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2">
                         <span className="text-base sm:text-lg font-bold text-primary">
                           ${(item.price * item.quantity).toLocaleString("es-CO")}
