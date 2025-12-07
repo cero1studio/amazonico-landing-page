@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { CartProvider } from "@/contexts/cart-context"
 import "./globals.css"
 
 const _geist = Geist({ subsets: ["latin"] })
@@ -10,7 +11,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Amazoniico - Colágeno Marino Hidrolizado Premium | Envío Gratis Colombia",
   description:
-    "Descubre el colágeno marino más puro del Amazonas. Rejuvenece tu piel, fortalece tu cabello y mejora tus articulaciones. 50% OFF + Envío gratis a toda Colombia. Garantía de 30 días.",
+    "Descubre el colágeno marino más puro del Amazonas. Rejuvenece tu piel, fortalece tu cabello y mejora tus articulaciones. 18% OFF + Envío gratis a toda Colombia. Garantía de 30 días.",
   keywords: "colágeno marino, colágeno hidrolizado, belleza, piel joven, salud articular, suplementos Colombia",
   authors: [{ name: "CeroUno SAS" }],
   creator: "CeroUno SAS",
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Amazoniico - Colágeno Marino Hidrolizado Premium",
     description:
-      "Descubre el colágeno marino más puro del Amazonas. Rejuvenece tu piel, fortalece tu cabello y mejora tus articulaciones. 50% OFF + Envío gratis a toda Colombia.",
+      "Descubre el colágeno marino más puro del Amazonas. Rejuvenece tu piel, fortalece tu cabello y mejora tus articulaciones. 18% OFF + Envío gratis a toda Colombia.",
     url: process.env.NEXT_PUBLIC_SITE_URL || "https://amazoniico.co",
     siteName: "Amazoniico",
     images: [
@@ -68,7 +69,9 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={`font-sans antialiased`}>
-        {children}
+        <CartProvider>
+          {children}
+        </CartProvider>
         <Analytics />
       </body>
     </html>

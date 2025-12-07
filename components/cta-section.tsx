@@ -22,7 +22,7 @@ export function CTASection() {
           </Badge>
 
           <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold text-balance">
-            Transforma tu Piel Hoy con <span className="text-primary">50% de Descuento</span>
+            Transforma tu Piel Hoy con <span className="text-primary">18% de Descuento</span>
           </h2>
 
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto text-pretty leading-relaxed">

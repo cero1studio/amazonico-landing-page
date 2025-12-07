@@ -2,14 +2,17 @@
 
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
+import { Badge } from "@/components/ui/badge"
 import { Menu, X, ShoppingCart } from "lucide-react"
-import { CheckoutModal } from "@/components/checkout-modal"
+import { CartSidebar } from "@/components/cart-sidebar"
+import { useCart } from "@/contexts/cart-context"
 import { useRouter } from "next/navigation"
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [isCheckoutOpen, setIsCheckoutOpen] = useState(false)
+  const [isCartOpen, setIsCartOpen] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
+  const { getTotalItems } = useCart()
   const router = useRouter()
 
   useEffect(() => {
@@ -21,12 +24,16 @@ export function Navbar() {
     return () => window.removeEventListener("resize", checkMobile)
   }, [])
 
-  const handleCheckoutClick = () => {
-    if (isMobile) {
-      router.push("/checkout")
-    } else {
-      setIsCheckoutOpen(true)
+  useEffect(() => {
+    const handleOpenCart = () => {
+      setIsCartOpen(true)
     }
+    window.addEventListener('openCart', handleOpenCart)
+    return () => window.removeEventListener('openCart', handleOpenCart)
+  }, [])
+
+  const handleCartClick = () => {
+    setIsCartOpen(true)
   }
 
   const scrollToSection = (id: string) => {
@@ -72,14 +79,17 @@ export function Navbar() {
           </div>
 
           <div className="flex items-center gap-4">
-            <Button
-              onClick={handleCheckoutClick}
-              size="sm"
-              className="bg-primary-foreground hover:bg-primary-foreground/90 text-primary hidden md:flex rounded-full px-6 shadow-lg font-semibold"
+            <button
+              onClick={handleCartClick}
+              className="relative hidden md:flex items-center justify-center p-2 text-primary-foreground hover:text-primary-foreground/80 transition-colors"
             >
-              <ShoppingCart className="mr-2 h-4 w-4" />
-              Comprar Ahora
-            </Button>
+              <ShoppingCart className="h-5 w-5" />
+              {getTotalItems() > 0 && (
+                <Badge className="absolute -top-1 -right-1 h-5 w-5 p-0 flex items-center justify-center bg-destructive text-destructive-foreground text-xs rounded-full border-2 border-primary">
+                  {getTotalItems()}
+                </Badge>
+              )}
+            </button>
 
             {/* Mobile Menu Button */}
             <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden p-2 text-primary-foreground">
@@ -116,26 +126,27 @@ export function Navbar() {
               >
                 FAQ
               </button>
-              <Button
+              <button
                 onClick={() => {
-                  handleCheckoutClick()
+                  handleCartClick()
                   setIsMenuOpen(false)
                 }}
-                size="sm"
-                className="bg-primary-foreground hover:bg-primary-foreground/90 text-primary w-full mt-2 rounded-full font-semibold"
+                className="relative flex items-center justify-center p-2 text-primary-foreground hover:text-primary-foreground/80 transition-colors w-full mt-2"
               >
-                <ShoppingCart className="mr-2 h-4 w-4" />
-                Comprar Ahora
-              </Button>
+                <ShoppingCart className="h-5 w-5 mr-2" />
+                <span className="text-sm font-medium">Carrito</span>
+                {getTotalItems() > 0 && (
+                  <Badge className="ml-2 h-5 w-5 p-0 flex items-center justify-center bg-destructive text-destructive-foreground text-xs rounded-full border-2 border-primary">
+                    {getTotalItems()}
+                  </Badge>
+                )}
+              </button>
             </div>
           </div>
         )}
       </div>
 
-      <CheckoutModal
-        isOpen={isCheckoutOpen}
-        onClose={() => setIsCheckoutOpen(false)}
-      />
+      <CartSidebar open={isCartOpen} onOpenChange={setIsCartOpen} />
     </nav>
   )
 }

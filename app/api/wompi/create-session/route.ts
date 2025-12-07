@@ -4,8 +4,8 @@ export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
 
-    // Validar datos requeridos
-    const requiredFields = ['name', 'email', 'phone', 'address', 'city', 'department', 'documentType', 'documentNumber', 'amount']
+    // Validar solo datos básicos requeridos
+    const requiredFields = ['name', 'email', 'phone', 'amount']
     for (const field of requiredFields) {
       if (!body[field]) {
         return NextResponse.json(
@@ -29,24 +29,20 @@ export async function POST(request: NextRequest) {
     // Crear referencia única
     const reference = body.reference || `AMAZONIICO-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`
 
-    // Incluir instrucciones en la descripción si existen
-    let description = body.description || `${body.productName || 'Amazoniico Colágeno Marino'}`
-    if (body.instructions && body.instructions.trim()) {
-      description += ` - ${body.instructions.substring(0, 100)}`
+    // Construir descripción desde cartItems o description
+    let description = body.description || 'Amazoniico Colágeno Marino'
+    if (body.cartItems && Array.isArray(body.cartItems) && body.cartItems.length > 0) {
+      const itemsDescription = body.cartItems.map((item: any) => 
+        `${item.quantity}x ${item.name}`
+      ).join(', ')
+      description = `Amazoniico Colágeno Marino - ${itemsDescription}`
     }
 
     // Construir URL del widget de Wompi con todos los parámetros
     const amountInCents = Math.round(body.amount * 100)
     const redirectUrl = `${process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'}/checkout/success?reference=${encodeURIComponent(reference)}`
 
-    // Mapear el método de pago seleccionado
-    const paymentMethodMap: Record<string, string> = {
-      'pse': 'PSE',
-      'card': 'CARD',
-      'bancolombia': 'BANCOLOMBIA_TRANSFER'
-    }
-
-    const selectedPaymentMethod = body.paymentMethod ? paymentMethodMap[body.paymentMethod] : 'PSE'
+    // No preseleccionar método de pago - el usuario lo seleccionará en Wompi
 
     const widgetParams = new URLSearchParams({
       'public-key': WOMPI_PUBLIC_KEY,
@@ -56,17 +52,10 @@ export async function POST(request: NextRequest) {
       'redirect-url': redirectUrl,
     })
 
-    // Agregar datos del cliente
+    // Agregar solo datos básicos del cliente (el resto se completa en Wompi)
     if (body.email) widgetParams.append('customer-data:email', body.email)
     if (body.name) widgetParams.append('customer-data:full-name', body.name)
     if (body.phone) widgetParams.append('customer-data:phone-number', body.phone)
-    if (body.documentNumber) widgetParams.append('customer-data:legal-id', body.documentNumber)
-    if (body.documentType) widgetParams.append('customer-data:legal-id-type', body.documentType)
-
-    // Preseleccionar método de pago
-    if (selectedPaymentMethod) {
-      widgetParams.append('payment-method', selectedPaymentMethod)
-    }
 
     const baseUrl = WOMPI_ENVIRONMENT === 'production'
       ? 'https://checkout.wompi.co/p/'
@@ -75,7 +64,7 @@ export async function POST(request: NextRequest) {
     const checkoutUrl = `${baseUrl}?${widgetParams.toString()}`
 
     console.log('URL de checkout generada:', checkoutUrl)
-    console.log('Método de pago preseleccionado:', selectedPaymentMethod)
+    console.log('Descripción:', description)
 
     // Retornar URL de checkout
     return NextResponse.json({
