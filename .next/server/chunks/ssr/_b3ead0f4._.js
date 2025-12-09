@@ -1,0 +1,3 @@
+module.exports=[87924,(a,b,c)=>{"use strict";b.exports=a.r(42602).vendored["react-ssr"].ReactJsxRuntime},35112,(a,b,c)=>{"use strict";b.exports=a.r(42602).vendored["react-ssr"].ReactDOM},52694,a=>{"use strict";var b=a.i(87924),c=a.i(83460),d=a.i(72131),e=a.i(50944);function f(){let[a,f]=(0,d.useState)(!1),[g,h]=(0,d.useState)(void 0),i=(0,e.useRouter)();return(0,d.useEffect)(()=>{let a=()=>{f(window.innerWidth<768)};return a(),window.addEventListener("resize",a),()=>window.removeEventListener("resize",a)},[]),(0,d.useEffect)(()=>{},[]),(0,d.useEffect)(()=>{},[i]),(0,b.jsx)(c.CheckoutModal,{isOpen:!0,onClose:()=>{i.back()},asPage:!0,product:g})}a.s(["default",()=>f])}];
+
+//# sourceMappingURL=_b3ead0f4._.js.map
