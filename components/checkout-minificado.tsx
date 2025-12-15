@@ -120,38 +120,49 @@ export function CheckoutMinificado({ isOpen, onClose }: CheckoutMinificadoProps)
 
   return (
     <>
-      {/* Sidebar sin overlay - no opaca el contenido - altura 100% */}
+      {/* Overlay solo en mobile para dar contexto */}
+      {isOpen && (
+        <div
+          className="fixed inset-0 bg-black/30 backdrop-blur-sm z-30 md:hidden"
+          onClick={onClose}
+        />
+      )}
+
+      {/* Sidebar - altura 100% en mobile y desktop */}
       <div
-        className={`fixed right-0 top-0 bottom-0 h-screen w-full max-w-md bg-background border-l-2 border-border shadow-2xl flex flex-col z-40 transition-transform duration-300 ease-out ${
+        className={`fixed right-0 top-0 bottom-0 h-screen w-full md:max-w-md bg-background border-l-2 border-border shadow-2xl flex flex-col z-40 transition-transform duration-300 ease-out ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
         style={{ height: '100vh' }}
       >
-          {/* Header mejorado */}
-          <div className="flex items-center justify-between p-5 md:p-6 border-b bg-gradient-to-r from-primary/5 to-accent/5">
+          {/* Header mejorado con mejor UX mobile */}
+          <div className="flex items-center justify-between p-4 md:p-6 border-b bg-gradient-to-r from-primary/5 to-accent/5">
             <div className="flex items-center gap-3">
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={onClose}
+                className="h-10 w-10 p-0 rounded-full hover:bg-muted md:hidden"
+              >
+                <X className="h-5 w-5" />
+              </Button>
               <div className="bg-primary/10 p-2 rounded-full">
                 <ShoppingCart className="h-5 w-5 text-primary" />
               </div>
               <div>
-                <h2 className="text-lg md:text-xl font-bold text-foreground">Mi Carrito</h2>
+                <h2 className="text-base md:text-lg font-bold text-foreground">Mi Carrito</h2>
                 {totalItems > 0 && (
                   <p className="text-xs text-muted-foreground">
-                    {totalItems} {totalItems === 1 ? "producto" : "productos"}
+                    {totalItems} {totalItems === 1 ? "producto" : "productos"} • ${total.toLocaleString("es-CO")}
                   </p>
                 )}
               </div>
-              {totalItems > 0 && (
-                <Badge className="bg-primary text-primary-foreground rounded-full h-6 w-6 flex items-center justify-center p-0 text-xs font-bold">
-                  {totalItems}
-                </Badge>
-              )}
             </div>
             <Button
               variant="ghost"
               size="sm"
               onClick={onClose}
-              className="h-9 w-9 p-0 rounded-full hover:bg-muted"
+              className="hidden md:flex h-9 w-9 p-0 rounded-full hover:bg-muted"
             >
               <X className="h-5 w-5" />
             </Button>
@@ -160,12 +171,19 @@ export function CheckoutMinificado({ isOpen, onClose }: CheckoutMinificadoProps)
           {/* Items List */}
           <div className="flex-1 overflow-y-auto p-4 md:p-6">
             {items.length === 0 ? (
-              <div className="flex flex-col items-center justify-center h-full text-center">
+              <div className="flex flex-col items-center justify-center h-full text-center px-4">
                 <ShoppingCart className="h-16 w-16 text-muted-foreground/30 mb-4" />
-                <p className="text-muted-foreground font-medium">Tu carrito está vacío</p>
-                <p className="text-sm text-muted-foreground mt-2">
+                <p className="text-muted-foreground font-medium text-base">Tu carrito está vacío</p>
+                <p className="text-sm text-muted-foreground mt-2 mb-6">
                   Agrega productos para continuar
                 </p>
+                <Button
+                  onClick={onClose}
+                  variant="outline"
+                  className="rounded-full"
+                >
+                  Ver Productos
+                </Button>
               </div>
             ) : (
               <div className="space-y-4">
@@ -233,10 +251,11 @@ export function CheckoutMinificado({ isOpen, onClose }: CheckoutMinificadoProps)
             )}
           </div>
 
-          {/* Footer mejorado */}
+          {/* Footer mejorado con mejor UX mobile */}
           {items.length > 0 && (
-            <div className="border-t-2 border-primary/20 p-5 md:p-6 bg-gradient-to-t from-background to-muted/20 space-y-4 shadow-lg">
-              <div className="space-y-3">
+            <div className="border-t-2 border-primary/20 p-4 md:p-6 bg-gradient-to-t from-background to-muted/20 space-y-3 md:space-y-4 shadow-lg">
+              {/* Resumen de totales más visible en mobile */}
+              <div className="bg-primary/5 rounded-xl p-3 md:p-4 space-y-2">
                 <div className="flex justify-between text-sm">
                   <span className="text-muted-foreground">Subtotal:</span>
                   <span className="font-semibold text-foreground">
@@ -245,33 +264,45 @@ export function CheckoutMinificado({ isOpen, onClose }: CheckoutMinificadoProps)
                 </div>
                 <div className="flex justify-between text-sm">
                   <span className="text-muted-foreground">Envío:</span>
-                  <Badge className="bg-primary/10 text-primary border-primary/30 rounded-full px-3 py-1">
+                  <Badge className="bg-primary/10 text-primary border-primary/30 rounded-full px-3 py-1 text-xs">
                     GRATIS
                   </Badge>
                 </div>
-                <div className="flex justify-between text-lg md:text-xl font-bold pt-3 border-t-2 border-primary/20">
-                  <span className="text-foreground">Total:</span>
-                  <span className="text-primary text-xl md:text-2xl">
+                <div className="flex justify-between text-base md:text-lg font-bold pt-2 border-t border-primary/20">
+                  <span className="text-foreground">Total a Pagar:</span>
+                  <span className="text-primary text-lg md:text-2xl">
                     ${total.toLocaleString("es-CO")}
                   </span>
                 </div>
               </div>
 
-              <Button
-                onClick={handleCheckout}
-                disabled={isProcessing}
-                className="w-full rounded-full bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-6 text-base md:text-lg shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed"
-                size="lg"
-              >
-                {isProcessing ? (
-                  <>
-                    <span className="animate-spin mr-2">⏳</span>
-                    Procesando...
-                  </>
-                ) : (
-                  "Proceder al Pago"
-                )}
-              </Button>
+              {/* Botones de acción mejorados para mobile */}
+              <div className="space-y-2">
+                <Button
+                  onClick={handleCheckout}
+                  disabled={isProcessing}
+                  className="w-full rounded-full bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-6 md:py-7 text-base md:text-lg shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed touch-manipulation"
+                  size="lg"
+                >
+                  {isProcessing ? (
+                    <>
+                      <span className="animate-spin mr-2">⏳</span>
+                      Procesando...
+                    </>
+                  ) : (
+                    "Proceder al Pago"
+                  )}
+                </Button>
+                
+                {/* Botón para seguir comprando - más visible en mobile */}
+                <Button
+                  onClick={onClose}
+                  variant="outline"
+                  className="w-full rounded-full font-medium py-4 text-sm touch-manipulation md:hidden"
+                >
+                  Seguir Comprando
+                </Button>
+              </div>
             </div>
           )}
       </div>
