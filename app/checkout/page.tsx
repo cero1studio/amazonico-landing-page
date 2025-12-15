@@ -1,61 +1,38 @@
 "use client"
 
-import { CheckoutModal } from "@/components/checkout-modal"
-import { useEffect, useState } from "react"
+import { CheckoutMinificado } from "@/components/checkout-minificado"
+import { useEffect } from "react"
 import { useRouter } from "next/navigation"
+import { useCart } from "@/lib/cart-context"
 
 export default function CheckoutPage() {
-  const [isMobile, setIsMobile] = useState(false)
-  const [initialProduct, setInitialProduct] = useState<{
-    name: string
-    price: number
-    originalPrice: number
-    savings: number
-  } | undefined>(undefined)
   const router = useRouter()
+  const { items } = useCart()
 
-  useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768)
-    }
-    checkMobile()
-    window.addEventListener("resize", checkMobile)
-    return () => window.removeEventListener("resize", checkMobile)
-  }, [])
-
-  // Cargar producto seleccionado desde sessionStorage
+  // Si es desktop o no hay items, redirigir a home
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      const stored = sessionStorage.getItem('selectedProduct')
-      if (stored) {
-        try {
-          setInitialProduct(JSON.parse(stored))
-          sessionStorage.removeItem('selectedProduct')
-        } catch (e) {
-          console.error('Error parsing stored product:', e)
-        }
+      const isDesktop = window.innerWidth >= 768
+      const hasNoItems = items.length === 0
+      
+      if (isDesktop || hasNoItems) {
+        router.push("/")
       }
     }
-  }, [])
-
-  // Si es desktop, redirigir a home
-  useEffect(() => {
-    if (typeof window !== 'undefined' && window.innerWidth >= 768) {
-      router.push("/")
-    }
-  }, [router])
+  }, [router, items])
 
   const handleClose = () => {
-    router.back()
+    router.push("/")
   }
 
+  // En mobile, mostrar el checkout minificado como página completa
   return (
-    <CheckoutModal 
-      isOpen={true} 
-      onClose={handleClose} 
-      asPage={true}
-      product={initialProduct}
-    />
+    <div className="min-h-screen bg-background">
+      <CheckoutMinificado 
+        isOpen={true} 
+        onClose={handleClose} 
+      />
+    </div>
   )
 }
 
