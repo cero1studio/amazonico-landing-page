@@ -2,15 +2,20 @@
 
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
+import { Badge } from "@/components/ui/badge"
 import { Menu, X, ShoppingCart } from "lucide-react"
-import { CheckoutModal } from "@/components/checkout-modal"
+import { CheckoutMinificado } from "@/components/checkout-minificado"
+import { useCart } from "@/lib/cart-context"
 import { useRouter } from "next/navigation"
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [isCheckoutOpen, setIsCheckoutOpen] = useState(false)
+  const [isCartOpen, setIsCartOpen] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
+  const { getTotalItems } = useCart()
   const router = useRouter()
+  
+  const cartItemsCount = getTotalItems()
 
   useEffect(() => {
     const checkMobile = () => {
@@ -21,12 +26,8 @@ export function Navbar() {
     return () => window.removeEventListener("resize", checkMobile)
   }, [])
 
-  const handleCheckoutClick = () => {
-    if (isMobile) {
-      router.push("/checkout")
-    } else {
-      setIsCheckoutOpen(true)
-    }
+  const handleCartClick = () => {
+    setIsCartOpen(true)
   }
 
   const scrollToSection = (id: string) => {
@@ -73,12 +74,17 @@ export function Navbar() {
 
           <div className="flex items-center gap-4">
             <Button
-              onClick={handleCheckoutClick}
+              onClick={handleCartClick}
               size="sm"
-              className="bg-primary-foreground hover:bg-primary-foreground/90 text-primary hidden md:flex rounded-full px-6 shadow-lg font-semibold"
+              className="bg-primary-foreground hover:bg-primary-foreground/90 text-primary hidden md:flex rounded-full px-6 shadow-lg font-semibold relative"
             >
               <ShoppingCart className="mr-2 h-4 w-4" />
-              Comprar Ahora
+              Carrito
+              {cartItemsCount > 0 && (
+                <Badge className="absolute -top-2 -right-2 h-5 w-5 flex items-center justify-center p-0 bg-destructive text-destructive-foreground rounded-full text-xs">
+                  {cartItemsCount}
+                </Badge>
+              )}
             </Button>
 
             {/* Mobile Menu Button */}
@@ -118,23 +124,28 @@ export function Navbar() {
               </button>
               <Button
                 onClick={() => {
-                  handleCheckoutClick()
+                  handleCartClick()
                   setIsMenuOpen(false)
                 }}
                 size="sm"
-                className="bg-primary-foreground hover:bg-primary-foreground/90 text-primary w-full mt-2 rounded-full font-semibold"
+                className="bg-primary-foreground hover:bg-primary-foreground/90 text-primary w-full mt-2 rounded-full font-semibold relative"
               >
                 <ShoppingCart className="mr-2 h-4 w-4" />
-                Comprar Ahora
+                Carrito
+                {cartItemsCount > 0 && (
+                  <Badge className="absolute -top-2 -right-2 h-5 w-5 flex items-center justify-center p-0 bg-destructive text-destructive-foreground rounded-full text-xs">
+                    {cartItemsCount}
+                  </Badge>
+                )}
               </Button>
             </div>
           </div>
         )}
       </div>
 
-      <CheckoutModal
-        isOpen={isCheckoutOpen}
-        onClose={() => setIsCheckoutOpen(false)}
+      <CheckoutMinificado
+        isOpen={isCartOpen}
+        onClose={() => setIsCartOpen(false)}
       />
     </nav>
   )

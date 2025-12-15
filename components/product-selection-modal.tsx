@@ -27,7 +27,7 @@ const pricingOptions = [
   },
   {
     id: 2,
-    name: "2 Frascos",
+    name: "Promo 2 Frascos",
     originalPrice: 110000,
     price: 90000,
     savings: 20000,
@@ -132,4 +132,3 @@ export function ProductSelectionModal({ isOpen, onClose, onSelectProduct }: Prod
     </Dialog>
   )
 }
-

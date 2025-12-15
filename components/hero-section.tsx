@@ -1,34 +1,11 @@
 "use client"
 
-import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Sparkles, ShieldCheck, Truck } from "lucide-react"
 import Image from "next/image"
-import { CheckoutModal } from "@/components/checkout-modal"
-import { useRouter } from "next/navigation"
 
 export function HeroSection() {
-  const [isCheckoutOpen, setIsCheckoutOpen] = useState(false)
-  const [isMobile, setIsMobile] = useState(false)
-  const router = useRouter()
-
-  useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768)
-    }
-    checkMobile()
-    window.addEventListener("resize", checkMobile)
-    return () => window.removeEventListener("resize", checkMobile)
-  }, [])
-
-  const handleCheckoutClick = () => {
-    if (isMobile) {
-      router.push("/checkout")
-    } else {
-      setIsCheckoutOpen(true)
-    }
-  }
 
   const scrollToPricing = () => {
     const pricingSection = document.getElementById("pricing")
@@ -60,7 +37,7 @@ export function HeroSection() {
               <Button
                 size="lg"
                 className="text-base md:text-lg px-6 md:px-8 py-5 md:py-6 bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg shadow-primary/30 rounded-full font-semibold transition-all duration-300 hover:scale-105"
-                onClick={handleCheckoutClick}
+                onClick={scrollToPricing}
               >
                 Comprar con Envío Gratis
               </Button>
@@ -107,11 +84,6 @@ export function HeroSection() {
           </div>
         </div>
       </div>
-
-      <CheckoutModal
-        isOpen={isCheckoutOpen}
-        onClose={() => setIsCheckoutOpen(false)}
-      />
     </section>
   )
 }

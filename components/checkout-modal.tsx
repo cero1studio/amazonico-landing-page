@@ -10,6 +10,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Badge } from "@/components/ui/badge"
 import { CreditCard, Building2, Smartphone, ShieldCheck, Lock, CheckCircle, Sparkles, Truck, ArrowLeft, ArrowRight, User, MapPin, CreditCard as CreditCardIcon, FileCheck, RefreshCw, X } from "lucide-react"
+import { useCart } from "@/lib/cart-context"
 
 interface CheckoutModalProps {
   isOpen: boolean
@@ -34,7 +35,7 @@ const pricingOptions = [
   },
   {
     id: 2,
-    name: "2 Frascos",
+    name: "Promo 2 Frascos",
     originalPrice: 110000,
     price: 90000,
     savings: 20000,
@@ -50,32 +51,23 @@ const pricingOptions = [
 type Step = 1 | 2 | 3 | 4
 
 export function CheckoutModal({ isOpen, onClose, product: initialProduct, asPage = false }: CheckoutModalProps) {
+  const { items, getTotal, clearCart } = useCart()
   const [currentStep, setCurrentStep] = useState<Step>(1)
   const [paymentMethod, setPaymentMethod] = useState("pse")
   const [isProcessing, setIsProcessing] = useState(false)
   const [errors, setErrors] = useState<Record<string, string>>({})
   const [touched, setTouched] = useState<Record<string, boolean>>({})
-  const [showProductSelection, setShowProductSelection] = useState(!initialProduct)
-  const [selectedProduct, setSelectedProduct] = useState(() => {
-    if (initialProduct) {
-      return initialProduct
-    }
-    // Default a 2 Frascos (más vendido) para aumentar ticket promedio
-    return {
-      name: pricingOptions[1].name,
-      price: pricingOptions[1].price,
-      originalPrice: pricingOptions[1].originalPrice,
-      savings: pricingOptions[1].savings,
-    }
-  })
-
-  // Actualizar selectedProduct si cambia initialProduct
+  const [showProductSelection, setShowProductSelection] = useState(!initialProduct && items.length === 0)
+  
+  // Si hay un producto inicial pero no hay items en el carrito, agregarlo
   useEffect(() => {
-    if (initialProduct) {
-      setSelectedProduct(initialProduct)
-      setShowProductSelection(false)
+    if (initialProduct && items.length === 0) {
+      // El producto inicial se manejará como antes para compatibilidad
     }
-  }, [initialProduct])
+  }, [initialProduct, items.length])
+
+  // Calcular total desde el carrito
+  const total = items.length > 0 ? getTotal() : (initialProduct?.price || 0)
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -243,9 +235,15 @@ export function CheckoutModal({ isOpen, onClose, product: initialProduct, asPage
 
   const createWompiSession = async () => {
     const fullName = `${formData.firstName} ${formData.lastName}`
+    
+    // Construir descripción con todos los productos
+    const productsDescription = items.length > 0
+      ? items.map(item => `${item.quantity}x ${item.name}`).join(", ")
+      : (initialProduct?.name || "")
+    
     const description = formData.instructions
-      ? `${selectedProduct.name} - Amazoniico Colágeno Marino. Indicaciones: ${formData.instructions}`
-      : `${selectedProduct.name} - Amazoniico Colágeno Marino`
+      ? `${productsDescription} - Amazoniico Colágeno Marino. Indicaciones: ${formData.instructions}`
+      : `${productsDescription} - Amazoniico Colágeno Marino`
 
     const wompiData = {
       name: fullName,
@@ -257,12 +255,17 @@ export function CheckoutModal({ isOpen, onClose, product: initialProduct, asPage
       documentType: formData.documentType,
       documentNumber: formData.documentNumber,
       instructions: formData.instructions || "",
-      amount: selectedProduct.price,
+      amount: total,
       currency: "COP",
       reference: `AMAZONIICO-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
       description: description,
-      productName: selectedProduct.name,
-      paymentMethod: paymentMethod, // Agregar el método de pago seleccionado
+      productName: items.length > 0 ? items.map(item => item.name).join(", ") : (initialProduct?.name || ""),
+      paymentMethod: paymentMethod,
+      items: items.length > 0 ? items : (initialProduct ? [{
+        name: initialProduct.name,
+        price: initialProduct.price,
+        quantity: 1
+      }] : [])
     }
 
     try {
@@ -288,6 +291,10 @@ export function CheckoutModal({ isOpen, onClose, product: initialProduct, asPage
 
       if (data.checkoutUrl) {
         console.log('Redirigiendo a:', data.checkoutUrl)
+        // Limpiar carrito después de crear la sesión exitosamente
+        if (items.length > 0) {
+          clearCart()
+        }
         window.location.href = data.checkoutUrl
       } else {
         console.error('Respuesta sin checkoutUrl:', data)
@@ -565,26 +572,43 @@ export function CheckoutModal({ isOpen, onClose, product: initialProduct, asPage
         )
 
       case 4:
+        const displayItems = items.length > 0 ? items : (initialProduct ? [{
+          id: 'single',
+          name: initialProduct.name,
+          price: initialProduct.price,
+          originalPrice: initialProduct.originalPrice,
+          savings: initialProduct.savings,
+          quantity: 1
+        }] : [])
+        
         return (
           <div className="space-y-4">
             <div className="bg-muted/30 rounded-xl p-4 space-y-3">
               <h4 className="font-bold text-base text-foreground">Resumen del Pedido</h4>
-              <div className="space-y-2 text-sm">
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">Producto:</span>
-                  <span className="font-medium text-foreground">{selectedProduct.name}</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">Precio:</span>
-                  <span className="font-medium text-foreground">{`$${selectedProduct.price.toLocaleString("es-CO")}`}</span>
-                </div>
-                <div className="flex justify-between">
+              <div className="space-y-3">
+                {displayItems.map((item) => (
+                  <div key={item.id} className="space-y-1 pb-2 border-b last:border-0">
+                    <div className="flex justify-between items-start">
+                      <span className="font-medium text-foreground text-sm">{item.name}</span>
+                      <span className="font-medium text-foreground text-sm">
+                        {item.quantity > 1 && `${item.quantity}x `}
+                        ${item.price.toLocaleString("es-CO")}
+                      </span>
+                    </div>
+                    {item.quantity > 1 && (
+                      <div className="text-xs text-muted-foreground text-right">
+                        Subtotal: ${(item.price * item.quantity).toLocaleString("es-CO")}
+                      </div>
+                    )}
+                  </div>
+                ))}
+                <div className="flex justify-between text-sm pt-2">
                   <span className="text-muted-foreground">Envío:</span>
                   <span className="font-medium text-primary">GRATIS</span>
                 </div>
                 <div className="border-t pt-2 flex justify-between font-bold">
                   <span>Total:</span>
-                  <span className="text-primary">{`$${selectedProduct.price.toLocaleString("es-CO")}`}</span>
+                  <span className="text-primary">${total.toLocaleString("es-CO")}</span>
                 </div>
               </div>
             </div>
@@ -683,81 +707,24 @@ export function CheckoutModal({ isOpen, onClose, product: initialProduct, asPage
           })}
         </div>
 
-        {/* Product Selection - Only in step 1 when showProductSelection is true */}
-        {currentStep === 1 && showProductSelection && (
+        {/* Product Selection - Solo mostrar si no hay items en carrito y hay initialProduct para compatibilidad */}
+        {currentStep === 1 && showProductSelection && items.length === 0 && !initialProduct && (
           <div className="mb-4">
-            <div className="grid sm:grid-cols-2 gap-3">
-              {pricingOptions.map((option) => {
-                const isSelected = selectedProduct.name === option.name
-                return (
-                  <div
-                    key={option.id}
-                    className={`relative border-2 rounded-xl p-4 transition-all duration-300 cursor-pointer flex flex-col justify-between ${isSelected
-                      ? "border-primary bg-primary/5 shadow-md"
-                      : option.popular
-                        ? "border-primary/30 bg-background hover:border-primary/50"
-                        : "border-border hover:border-primary/30"
-                      }`}
-                    onClick={() => {
-                      setSelectedProduct({
-                        name: option.name,
-                        price: option.price,
-                        originalPrice: option.originalPrice,
-                        savings: option.savings,
-                      })
-                      setShowProductSelection(false)
-                    }}
-                  >
-                    {option.popular && (
-                      <div className="absolute -top-2 left-1/2 -translate-x-1/2 z-10">
-                        <Badge className="bg-primary text-primary-foreground border-0 px-2 py-0.5 text-[10px] shadow-lg rounded-full">
-                          MÁS VENDIDO
-                        </Badge>
-                      </div>
-                    )}
-                    <div className="text-center flex flex-col justify-between h-full">
-                      <div>
-                        <h4 className="font-bold text-sm mb-3">{option.name}</h4>
-                        <div className="flex items-center justify-center gap-2 mb-3">
-                          <span className="text-sm text-muted-foreground line-through decoration-2 decoration-destructive/70">
-                            {`$${option.originalPrice.toLocaleString("es-CO")}`}
-                          </span>
-                          <span className="text-lg font-bold text-primary">
-                            {`$${option.price.toLocaleString("es-CO")}`}
-                          </span>
-                        </div>
-                      </div>
-                      <Badge className="bg-primary/10 text-primary border-primary/30 rounded-full text-[10px] font-medium w-fit mx-auto">
-                        + Envío GRATIS
-                      </Badge>
-                    </div>
-                  </div>
-                )
-              })}
-            </div>
+            <p className="text-sm text-muted-foreground text-center">
+              Por favor agrega productos al carrito desde la sección de precios
+            </p>
           </div>
         )}
 
-        {/* Product Card - Show selected product when not in selection mode */}
-        {(!showProductSelection || currentStep !== 1) && currentStep !== 4 && (
+        {/* Product Card - Show cart summary when not in selection mode */}
+        {(!showProductSelection || currentStep !== 1) && currentStep !== 4 && items.length > 0 && (
           <div className="mb-4 relative">
             <div className="bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl p-4 border-2 border-primary/20">
-              <Button
-                variant="ghost"
-                size="sm"
-                className="absolute top-2 right-2 h-8 w-8 p-0 rounded-full hover:bg-primary/10"
-                onClick={() => {
-                  setShowProductSelection(true)
-                  if (currentStep > 1) {
-                    setCurrentStep(1)
-                  }
-                }}
-              >
-                <RefreshCw className="h-4 w-4 text-primary" />
-              </Button>
-              <div className="flex justify-between items-center mb-2 pr-8">
+              <div className="flex justify-between items-center mb-2">
                 <div>
-                  <h3 className="font-bold text-base text-foreground">{selectedProduct.name}</h3>
+                  <h3 className="font-bold text-base text-foreground">
+                    {items.length} {items.length === 1 ? 'Producto' : 'Productos'} en el carrito
+                  </h3>
                   <p className="text-xs text-muted-foreground">Amazoniico Colágeno Marino</p>
                 </div>
                 <Badge className="bg-accent text-accent-foreground rounded-full text-xs">Envío GRATIS</Badge>
@@ -765,7 +732,28 @@ export function CheckoutModal({ isOpen, onClose, product: initialProduct, asPage
               <div className="flex justify-between items-center pt-2 border-t border-primary/20">
                 <span className="text-sm text-muted-foreground">Total a Pagar</span>
                 <span className="font-bold text-xl text-primary">
-                  {`$${selectedProduct.price.toLocaleString("es-CO")}`}
+                  ${total.toLocaleString("es-CO")}
+                </span>
+              </div>
+            </div>
+          </div>
+        )}
+        
+        {/* Product Card - Show single product when initialProduct is provided */}
+        {(!showProductSelection || currentStep !== 1) && currentStep !== 4 && items.length === 0 && initialProduct && (
+          <div className="mb-4 relative">
+            <div className="bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl p-4 border-2 border-primary/20">
+              <div className="flex justify-between items-center mb-2">
+                <div>
+                  <h3 className="font-bold text-base text-foreground">{initialProduct.name}</h3>
+                  <p className="text-xs text-muted-foreground">Amazoniico Colágeno Marino</p>
+                </div>
+                <Badge className="bg-accent text-accent-foreground rounded-full text-xs">Envío GRATIS</Badge>
+              </div>
+              <div className="flex justify-between items-center pt-2 border-t border-primary/20">
+                <span className="text-sm text-muted-foreground">Total a Pagar</span>
+                <span className="font-bold text-xl text-primary">
+                  ${initialProduct.price.toLocaleString("es-CO")}
                 </span>
               </div>
             </div>
@@ -826,7 +814,7 @@ export function CheckoutModal({ isOpen, onClose, product: initialProduct, asPage
               ) : (
                 <>
                   <CheckCircle className="mr-2 h-5 w-5" />
-                  Confirmar Pedido - {`$${selectedProduct.price.toLocaleString("es-CO")}`}
+                  Confirmar Pedido - ${total.toLocaleString("es-CO")}
                 </>
               )}
             </Button>

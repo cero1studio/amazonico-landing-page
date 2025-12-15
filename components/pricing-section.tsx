@@ -5,8 +5,9 @@ import { useRouter } from "next/navigation"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Check, Truck, CreditCard, ShieldCheck, Sparkles, Heart } from "lucide-react"
-import { CheckoutModal } from "@/components/checkout-modal"
+import { Check, Truck, CreditCard, ShieldCheck, Sparkles, Heart, ShoppingCart } from "lucide-react"
+import { useCart } from "@/lib/cart-context"
+import { CheckoutMinificado } from "@/components/checkout-minificado"
 
 const pricingOptions = [
   {
@@ -25,7 +26,7 @@ const pricingOptions = [
   },
   {
     id: 2,
-    name: "2 Frascos",
+    name: "Promo 2 Frascos",
     originalPrice: 110000,
     price: 90000,
     savings: 20000,
@@ -41,9 +42,9 @@ const pricingOptions = [
 ]
 
 export function PricingSection() {
-  const [selectedOption, setSelectedOption] = useState<(typeof pricingOptions)[0] | null>(null)
-  const [isCheckoutOpen, setIsCheckoutOpen] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
+  const [isCartOpen, setIsCartOpen] = useState(false)
+  const { addItem } = useCart()
   const router = useRouter()
 
   useEffect(() => {
@@ -56,18 +57,20 @@ export function PricingSection() {
   }, [])
 
   const handleBuyClick = (option: (typeof pricingOptions)[0]) => {
+    // Agregar producto al carrito
+    addItem({
+      name: option.name,
+      price: option.price,
+      originalPrice: option.originalPrice,
+      savings: option.savings,
+    })
+
+    // En mobile, redirigir al checkout después de agregar
     if (isMobile) {
-      // En mobile, guardar la opción en sessionStorage y redirigir
-      sessionStorage.setItem('selectedProduct', JSON.stringify({
-        name: option.name,
-        price: option.price,
-        originalPrice: option.originalPrice,
-        savings: option.savings,
-      }))
       router.push("/checkout")
     } else {
-      setSelectedOption(option)
-      setIsCheckoutOpen(true)
+      // En desktop, abrir el carrito automáticamente
+      setIsCartOpen(true)
     }
   }
 
@@ -88,8 +91,9 @@ export function PricingSection() {
             {pricingOptions.map((option) => (
               <Card
                 key={option.id}
-                className={`relative border-2 transition-all duration-300 hover:shadow-2xl ${option.popular ? "border-primary shadow-xl md:scale-105" : "border-border hover:border-primary/50"
-                  }`}
+                className={`relative border-2 transition-all duration-300 hover:shadow-2xl ${
+                  option.popular ? "border-primary shadow-xl md:scale-105" : "border-border hover:border-primary/50"
+                }`}
               >
                 {option.popular && (
                   <div className="absolute -top-3 md:-top-4 left-1/2 -translate-x-1/2 z-10">
@@ -142,13 +146,15 @@ export function PricingSection() {
                   <div className="pt-4">
                     <Button
                       size="lg"
-                      className={`w-full text-base md:text-lg py-5 md:py-6 rounded-full font-semibold transition-all duration-300 hover:scale-105 ${option.popular
+                      className={`w-full text-base md:text-lg py-5 md:py-6 rounded-full font-semibold transition-all duration-300 hover:scale-105 ${
+                        option.popular
                           ? "bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg shadow-primary/30"
                           : "bg-secondary hover:bg-secondary/90 text-secondary-foreground"
-                        }`}
+                      }`}
                       onClick={() => handleBuyClick(option)}
                     >
-                      Comprar Ahora
+                      <ShoppingCart className="mr-2 h-5 w-5" />
+                      Agregar al Carrito
                     </Button>
                   </div>
                 </CardContent>
@@ -245,21 +251,10 @@ export function PricingSection() {
         </div>
       </section>
 
-      {selectedOption && (
-        <CheckoutModal
-          isOpen={isCheckoutOpen}
-          onClose={() => {
-            setIsCheckoutOpen(false)
-            setSelectedOption(null)
-          }}
-          product={{
-            name: selectedOption.name,
-            price: selectedOption.price,
-            originalPrice: selectedOption.originalPrice,
-            savings: selectedOption.savings,
-          }}
-        />
-      )}
+      <CheckoutMinificado
+        isOpen={isCartOpen}
+        onClose={() => setIsCartOpen(false)}
+      />
     </>
   )
 }

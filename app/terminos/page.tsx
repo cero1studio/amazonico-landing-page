@@ -38,7 +38,7 @@ export default function TerminosPage() {
           </p>
           <ul className="list-disc list-inside space-y-2 ml-4">
             <li>1 Frasco de 500g: $55,000 COP (precio regular $60,000)</li>
-            <li>2 Frascos de 500g: $90,000 COP (precio regular $110,000)</li>
+            <li>Promo 2 Frascos de 500g: $90,000 COP (precio regular $110,000)</li>
             <li>Los precios pueden cambiar sin previo aviso</li>
             <li>Las promociones son válidas hasta agotar existencias</li>
           </ul>
