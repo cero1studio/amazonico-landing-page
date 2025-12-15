@@ -4,7 +4,7 @@ import { useCart } from "@/lib/cart-context"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { X, Plus, Minus, ShoppingCart } from "lucide-react"
-import { useState } from "react"
+import { useState, useEffect, useRef } from "react"
 
 interface CheckoutMinificadoProps {
   isOpen: boolean
@@ -14,9 +14,27 @@ interface CheckoutMinificadoProps {
 export function CheckoutMinificado({ isOpen, onClose }: CheckoutMinificadoProps) {
   const { items, removeItem, updateQuantity, getTotal, getTotalItems, clearCart } = useCart()
   const [isProcessing, setIsProcessing] = useState(false)
+  const scrollPositionRef = useRef(0)
 
   const total = getTotal()
   const totalItems = getTotalItems()
+
+  // Guardar posición del scroll al abrir y restaurar al cerrar
+  useEffect(() => {
+    if (isOpen) {
+      // Guardar posición actual del scroll al abrir
+      scrollPositionRef.current = window.scrollY
+    }
+  }, [isOpen])
+
+  const handleClose = () => {
+    // Restaurar scroll a la posición guardada
+    window.scrollTo({
+      top: scrollPositionRef.current,
+      behavior: 'instant'
+    })
+    onClose()
+  }
 
   const handleCheckout = async () => {
     setIsProcessing(true)
@@ -124,7 +142,7 @@ export function CheckoutMinificado({ isOpen, onClose }: CheckoutMinificadoProps)
       {isOpen && (
         <div
           className="fixed inset-0 bg-black/30 backdrop-blur-sm z-30 md:hidden"
-          onClick={onClose}
+          onClick={handleClose}
         />
       )}
 
@@ -141,7 +159,7 @@ export function CheckoutMinificado({ isOpen, onClose }: CheckoutMinificadoProps)
               <Button
                 variant="ghost"
                 size="sm"
-                onClick={onClose}
+                onClick={handleClose}
                 className="h-10 w-10 p-0 rounded-full hover:bg-muted md:hidden"
               >
                 <X className="h-5 w-5" />
@@ -161,7 +179,7 @@ export function CheckoutMinificado({ isOpen, onClose }: CheckoutMinificadoProps)
             <Button
               variant="ghost"
               size="sm"
-              onClick={onClose}
+              onClick={handleClose}
               className="hidden md:flex h-9 w-9 p-0 rounded-full hover:bg-muted"
             >
               <X className="h-5 w-5" />
@@ -178,7 +196,7 @@ export function CheckoutMinificado({ isOpen, onClose }: CheckoutMinificadoProps)
                   Agrega productos para continuar
                 </p>
                 <Button
-                  onClick={onClose}
+                  onClick={handleClose}
                   variant="outline"
                   className="rounded-full"
                 >
@@ -296,7 +314,7 @@ export function CheckoutMinificado({ isOpen, onClose }: CheckoutMinificadoProps)
                 
                 {/* Botón para seguir comprando - más visible en mobile */}
                 <Button
-                  onClick={onClose}
+                  onClick={handleClose}
                   variant="outline"
                   className="w-full rounded-full font-medium py-4 text-sm touch-manipulation md:hidden"
                 >
