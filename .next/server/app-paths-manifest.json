@@ -1,0 +1,13 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/wompi/create-session/route": "app/api/wompi/create-session/route.js",
+  "/checkout/page": "app/checkout/page.js",
+  "/checkout/success/page": "app/checkout/success/page.js",
+  "/devoluciones/page": "app/devoluciones/page.js",
+  "/page": "app/page.js",
+  "/privacidad/page": "app/privacidad/page.js",
+  "/robots.txt/route": "app/robots.txt/route.js",
+  "/sitemap.xml/route": "app/sitemap.xml/route.js",
+  "/terminos/page": "app/terminos/page.js"
+}

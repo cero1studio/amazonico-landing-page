@@ -1,6 +1,5 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
   "/api/wompi/create-session/route": "app/api/wompi/create-session/route.js",
-  "/checkout/page": "app/checkout/page.js",
-  "/page": "app/page.js"
+  "/page": "app/page.js",
+  "/terminos/page": "app/terminos/page.js"
 }

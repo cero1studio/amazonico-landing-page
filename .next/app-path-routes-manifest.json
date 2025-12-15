@@ -1,0 +1,13 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/api/wompi/create-session/route": "/api/wompi/create-session",
+  "/checkout/page": "/checkout",
+  "/checkout/success/page": "/checkout/success",
+  "/devoluciones/page": "/devoluciones",
+  "/page": "/",
+  "/privacidad/page": "/privacidad",
+  "/robots.txt/route": "/robots.txt",
+  "/sitemap.xml/route": "/sitemap.xml",
+  "/terminos/page": "/terminos"
+}
