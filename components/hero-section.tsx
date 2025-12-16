@@ -34,12 +34,11 @@ export function HeroSection() {
             </Badge>
 
             <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl text-balance">
-              <span className="text-destructive">🔥 LIQUIDACIÓN:</span> 3 Frascos x <span className="text-primary">$99.000</span>
+              Piel Joven + Cabello Fuerte: <span className="text-destructive">3 Frascos x $99.000</span>
             </h1>
 
             <p className="text-base md:text-lg text-muted-foreground text-pretty leading-relaxed">
-              <strong>Piel más joven, cabello fuerte y articulaciones sanas.</strong> Ahorra <strong className="text-destructive">$66.000</strong> en esta liquidación por cambio de empaque. 
-              Mismo colágeno marino premium. <strong>¡Últimas unidades!</strong>
+              <strong className="text-foreground">Colágeno marino premium que rejuvenece tu piel, fortalece tu cabello y mejora tus articulaciones.</strong> Ahorra <strong className="text-destructive">$66.000</strong> en esta liquidación por cambio de empaque. <strong>¡Últimas unidades disponibles!</strong>
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center lg:justify-start mt-2 md:mt-4">
