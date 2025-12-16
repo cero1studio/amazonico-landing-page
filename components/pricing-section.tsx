@@ -12,31 +12,18 @@ import { CheckoutMinificado } from "@/components/checkout-minificado"
 const pricingOptions = [
   {
     id: 1,
-    name: "1 Frasco",
-    originalPrice: 60000,
-    price: 55000,
-    savings: 5000,
-    discount: "8%",
-    shipping: "Incluido",
-    popular: false,
-    features: [
-      "1 Frasco de 500g (17 porciones)",
-      "1 mes de tratamiento",
-    ],
-  },
-  {
-    id: 2,
-    name: "Promo 2 Frascos",
-    originalPrice: 110000,
-    price: 90000,
-    savings: 20000,
-    discount: "18%",
+    name: "LIQUIDACIÓN - 3 Frascos",
+    originalPrice: 165000,
+    price: 99000,
+    savings: 66000,
+    discount: "40%",
     shipping: "Incluido",
     popular: true,
     features: [
-      "2 Frascos de 500g (34 porciones)",
-      "2 meses de tratamiento completo",
-      "Mejor relación precio-beneficio",
+      "3 Frascos de 500g (51 porciones)",
+      "3 meses de tratamiento completo",
+      "¡Última oportunidad! Stock limitado",
+      "Envío GRATIS incluido",
     ],
   },
 ]
@@ -79,15 +66,18 @@ export function PricingSection() {
       <section id="pricing" className="py-16 md:py-24 lg:py-32 bg-gradient-to-b from-muted/30 to-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 md:mb-16">
-            <Badge className="mb-4 bg-destructive text-destructive-foreground border-0 text-sm md:text-base px-4 md:px-6 py-2 rounded-full animate-pulse">
-              Oferta Limitada - Envío Gratis Hoy
+            <Badge className="mb-4 bg-destructive text-destructive-foreground border-0 text-base md:text-lg px-6 md:px-8 py-3 rounded-full animate-pulse shadow-lg">
+              🔥 LIQUIDACIÓN DE INVENTARIO - Últimas Unidades
             </Badge>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-balance">
-              Aprovecha Nuestra <span className="text-primary">Promoción Especial</span>
+              ¡Stock Limitado! <span className="text-destructive">Cambio de Empaque</span>
             </h2>
+            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
+              Aprovecha esta liquidación especial antes de que se agoten. Mismo producto premium, empaque anterior.
+            </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto mb-8 md:mb-12">
+          <div className="grid md:grid-cols-1 gap-6 md:gap-8 max-w-2xl mx-auto mb-8 md:mb-12">
             {pricingOptions.map((option) => (
               <Card
                 key={option.id}
@@ -97,8 +87,8 @@ export function PricingSection() {
               >
                 {option.popular && (
                   <div className="absolute -top-3 md:-top-4 left-1/2 -translate-x-1/2 z-10">
-                    <Badge className="bg-primary text-primary-foreground border-0 px-4 md:px-6 py-1.5 md:py-2 text-xs md:text-sm shadow-lg rounded-full">
-                      MÁS VENDIDO - 67% lo eligen
+                    <Badge className="bg-destructive text-destructive-foreground border-0 px-6 md:px-8 py-2 md:py-3 text-sm md:text-base shadow-xl rounded-full animate-pulse">
+                      🔥 ÚLTIMAS UNIDADES
                     </Badge>
                   </div>
                 )}
@@ -118,9 +108,9 @@ export function PricingSection() {
                       </span>
                     </div>
                     <Badge
-                      className="w-fit mx-auto bg-destructive text-white border-0 rounded-full text-sm md:text-base font-bold px-5 py-2 shadow-lg shadow-destructive/30"
+                      className="w-fit mx-auto bg-destructive text-white border-0 rounded-full text-base md:text-lg font-bold px-6 py-3 shadow-xl shadow-destructive/40 animate-pulse"
                     >
-                      Ahorras ${option.savings.toLocaleString("es-CO")}
+                      ¡Ahorras ${option.savings.toLocaleString("es-CO")}!
                     </Badge>
                   </div>
 
@@ -146,15 +136,11 @@ export function PricingSection() {
                   <div className="pt-4">
                     <Button
                       size="lg"
-                      className={`w-full text-base md:text-lg py-5 md:py-6 rounded-full font-semibold transition-all duration-300 hover:scale-105 ${
-                        option.popular
-                          ? "bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg shadow-primary/30"
-                          : "bg-secondary hover:bg-secondary/90 text-secondary-foreground"
-                      }`}
+                      className="w-full text-base md:text-xl py-6 md:py-8 rounded-full font-bold transition-all duration-300 hover:scale-105 bg-destructive hover:bg-destructive/90 text-destructive-foreground shadow-xl shadow-destructive/30 animate-pulse"
                       onClick={() => handleBuyClick(option)}
                     >
-                      <ShoppingCart className="mr-2 h-5 w-5" />
-                      Agregar al Carrito
+                      <ShoppingCart className="mr-2 h-6 w-6" />
+                      ¡Comprar Ahora Antes de que se Agote!
                     </Button>
                   </div>
                 </CardContent>

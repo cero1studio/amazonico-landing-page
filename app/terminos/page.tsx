@@ -37,10 +37,10 @@ export default function TerminosPage() {
             incluyen el envío a todo el territorio nacional.
           </p>
           <ul className="list-disc list-inside space-y-2 ml-4">
-            <li>1 Frasco de 500g: $55,000 COP (precio regular $60,000)</li>
-            <li>Promo 2 Frascos de 500g: $90,000 COP (precio regular $110,000)</li>
-            <li>Los precios pueden cambiar sin previo aviso</li>
-            <li>Las promociones son válidas hasta agotar existencias</li>
+            <li>LIQUIDACIÓN - 3 Frascos de 500g: $99,000 COP (precio regular $165,000)</li>
+            <li>Oferta válida solo hasta agotar inventario actual</li>
+            <li>Cambio de empaque - mismo producto premium</li>
+            <li>Envío GRATIS incluido</li>
           </ul>
         </section>
 

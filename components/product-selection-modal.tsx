@@ -19,22 +19,14 @@ interface ProductSelectionModalProps {
 const pricingOptions = [
   {
     id: 1,
-    name: "1 Frasco",
-    originalPrice: 60000,
-    price: 55000,
-    savings: 5000,
-    features: ["1 Frasco de 500g (17 porciones)", "1 mes de tratamiento"],
-  },
-  {
-    id: 2,
-    name: "Promo 2 Frascos",
-    originalPrice: 110000,
-    price: 90000,
-    savings: 20000,
+    name: "LIQUIDACIÓN - 3 Frascos",
+    originalPrice: 165000,
+    price: 99000,
+    savings: 66000,
     features: [
-      "2 Frascos de 500g (34 porciones)",
-      "2 meses de tratamiento completo",
-      "Mejor relación precio-beneficio",
+      "3 Frascos de 500g (51 porciones)",
+      "3 meses de tratamiento completo",
+      "¡Última oportunidad! Stock limitado",
     ],
     popular: true,
   },
@@ -56,11 +48,11 @@ export function ProductSelectionModal({ isOpen, onClose, onSelectProduct }: Prod
       <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto">
         <DialogHeader>
           <DialogTitle className="text-2xl md:text-3xl font-bold text-center">
-            Elige tu Cantidad
+            🔥 Liquidación Especial
           </DialogTitle>
         </DialogHeader>
 
-        <div className="grid md:grid-cols-2 gap-4 md:gap-6 mt-6">
+        <div className="grid md:grid-cols-1 gap-4 md:gap-6 mt-6 max-w-md mx-auto">
           {pricingOptions.map((option) => (
             <div
               key={option.id}

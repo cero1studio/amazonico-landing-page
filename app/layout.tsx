@@ -9,9 +9,9 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Amazoniico - Colágeno Marino Hidrolizado Premium | Envío Gratis Colombia",
+  title: "Amazoniico - LIQUIDACIÓN 40% OFF - 3 Frascos x $99.000 | Envío Gratis",
   description:
-    "Descubre el colágeno marino más puro del Amazonas. Rejuvenece tu piel, fortalece tu cabello y mejora tus articulaciones. Hasta 18% de descuento + Envío gratis a toda Colombia. Garantía de 30 días.",
+    "🔥 LIQUIDACIÓN de Inventario: 3 Frascos de colágeno marino premium por solo $99.000 (antes $165.000). Ahorra $66.000 + Envío GRATIS. Últimas unidades antes de cambio de empaque.",
   keywords: "colágeno marino, colágeno hidrolizado, belleza, piel joven, salud articular, suplementos Colombia",
   authors: [{ name: "CeroUno SAS" }],
   creator: "CeroUno SAS",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Amazoniico - Colágeno Marino Hidrolizado Premium",
+    title: "Amazoniico - LIQUIDACIÓN 40% OFF - 3 Frascos x $99.000",
     description:
-      "Descubre el colágeno marino más puro del Amazonas. Rejuvenece tu piel, fortalece tu cabello y mejora tus articulaciones. Hasta 18% de descuento + Envío gratis a toda Colombia.",
+      "🔥 LIQUIDACIÓN: 3 Frascos de colágeno marino premium por $99.000 (antes $165.000). Stock limitado - Cambio de empaque. Ahorra $66.000 + Envío GRATIS.",
     url: process.env.NEXT_PUBLIC_SITE_URL || "https://amazoniico.co",
     siteName: "Amazoniico",
     images: [

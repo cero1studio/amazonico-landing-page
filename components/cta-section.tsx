@@ -16,27 +16,26 @@ export function CTASection() {
 
       <div className="container mx-auto px-4 relative">
         <div className="max-w-4xl mx-auto text-center space-y-8">
-          <Badge className="bg-destructive text-destructive-foreground border-0 text-base px-6 py-2">
-            <Clock className="mr-2 h-4 w-4" />
-            Oferta por Tiempo Limitado
+          <Badge className="bg-destructive text-destructive-foreground border-0 text-lg px-8 py-3 animate-pulse shadow-xl">
+            <Clock className="mr-2 h-5 w-5" />
+            ⚠️ LIQUIDACIÓN - Stock Limitado
           </Badge>
 
           <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold text-balance">
-            Transforma tu Piel Hoy con <span className="text-primary">Descuentos Exclusivos</span>
+            <span className="text-destructive">¡Últimas Unidades!</span> 3 Frascos x <span className="text-primary">$99.000</span>
           </h2>
 
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto text-pretty leading-relaxed">
-            Únete a más de 15,000 colombianos que ya experimentaron resultados increíbles. Envío gratis y garantía de 30
-            días.
+            Ahorra <strong className="text-destructive">$66.000</strong> en esta liquidación especial. Mismo colágeno premium, empaque anterior. <strong>¡Hasta agotar stock!</strong>
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
             <Button
               size="lg"
-              className="text-xl px-10 py-7 bg-primary hover:bg-primary/90 text-primary-foreground shadow-xl shadow-primary/30"
+              className="text-xl px-12 py-8 bg-destructive hover:bg-destructive/90 text-destructive-foreground shadow-xl shadow-destructive/40 animate-pulse font-bold"
               onClick={scrollToPricing}
             >
-              Aprovechar Oferta Ahora
+              ¡Comprar Antes de que se Agote!
               <ArrowRight className="ml-2 h-6 w-6" />
             </Button>
           </div>
