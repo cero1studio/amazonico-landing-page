@@ -38,7 +38,7 @@ export function HeroSection() {
             </h1>
 
             <p className="text-base md:text-lg text-muted-foreground text-pretty leading-relaxed">
-              <strong className="text-foreground">Colágeno marino premium que rejuvenece tu piel, fortalece tu cabello y mejora tus articulaciones.</strong> Ahorra <strong className="text-destructive">$66.000</strong> en esta liquidación por cambio de empaque. <strong>¡Últimas unidades disponibles!</strong>
+              <strong className="text-foreground">Regala bienestar en este fin de año.</strong> Colágeno marino premium que rejuvenece tu piel, fortalece tu cabello y mejora tus articulaciones. <strong className="text-destructive">Liquidación por cambio de empaque - ¡Últimas unidades!</strong>
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center lg:justify-start mt-2 md:mt-4">
