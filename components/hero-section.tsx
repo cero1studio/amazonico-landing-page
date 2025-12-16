@@ -38,8 +38,8 @@ export function HeroSection() {
             </h1>
 
             <p className="text-base md:text-lg text-muted-foreground text-pretty leading-relaxed">
-              Ahorra <strong className="text-destructive">$66.000</strong> en esta liquidación por cambio de empaque. 
-              Mismo colágeno marino premium que amas. <strong>¡Últimas unidades disponibles!</strong>
+              <strong>Piel más joven, cabello fuerte y articulaciones sanas.</strong> Ahorra <strong className="text-destructive">$66.000</strong> en esta liquidación por cambio de empaque. 
+              Mismo colágeno marino premium. <strong>¡Últimas unidades!</strong>
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center lg:justify-start mt-2 md:mt-4">
@@ -68,7 +68,11 @@ export function HeroSection() {
               </Button>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 md:gap-6 mt-4 md:mt-6 justify-center lg:justify-start text-sm md:text-base">
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mt-4 md:mt-6 justify-center lg:justify-start text-sm md:text-base">
+              <div className="flex items-center gap-2 justify-center lg:justify-start bg-primary/10 px-4 py-2 rounded-full">
+                <Sparkles className="h-5 w-5 text-primary flex-shrink-0" />
+                <span className="font-medium text-foreground">Resultados en 3 semanas</span>
+              </div>
               <div className="flex items-center gap-2 justify-center lg:justify-start bg-accent/10 px-4 py-2 rounded-full">
                 <ShieldCheck className="h-5 w-5 text-accent flex-shrink-0" />
                 <span className="font-medium text-foreground">100% Natural</span>
