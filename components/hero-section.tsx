@@ -54,7 +54,15 @@ export function HeroSection() {
                 size="lg"
                 variant="outline"
                 className="text-base md:text-lg px-6 md:px-8 py-5 md:py-6 bg-transparent rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:bg-primary/5"
-                onClick={() => document.getElementById("benefits")?.scrollIntoView({ behavior: "smooth" })}
+                onClick={() => {
+                  const element = document.getElementById("benefits")
+                  if (element) {
+                    const offset = 80
+                    const elementPosition = element.getBoundingClientRect().top
+                    const offsetPosition = elementPosition + window.scrollY - offset
+                    window.scrollTo({ top: offsetPosition, behavior: "smooth" })
+                  }
+                }}
               >
                 Ver Beneficios
               </Button>
