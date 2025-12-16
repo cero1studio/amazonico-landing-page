@@ -7,7 +7,16 @@ import { ArrowRight, Clock } from "lucide-react"
 export function CTASection() {
   const scrollToPricing = () => {
     const pricingSection = document.getElementById("pricing")
-    pricingSection?.scrollIntoView({ behavior: "smooth" })
+    if (pricingSection) {
+      const offset = 80 // Offset para navbar sticky
+      const elementPosition = pricingSection.getBoundingClientRect().top
+      const offsetPosition = elementPosition + window.scrollY - offset
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      })
+    }
   }
 
   return (

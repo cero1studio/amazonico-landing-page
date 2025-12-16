@@ -32,7 +32,16 @@ export function Navbar() {
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id)
-    element?.scrollIntoView({ behavior: "smooth" })
+    if (element) {
+      const offset = 80 // Offset para navbar sticky
+      const elementPosition = element.getBoundingClientRect().top
+      const offsetPosition = elementPosition + window.scrollY - offset
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      })
+    }
     setIsMenuOpen(false)
   }
 

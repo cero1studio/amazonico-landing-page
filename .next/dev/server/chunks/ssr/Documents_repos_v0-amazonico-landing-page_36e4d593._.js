@@ -764,9 +764,16 @@ function Navbar() {
     };
     const scrollToSection = (id)=>{
         const element = document.getElementById(id);
-        element?.scrollIntoView({
-            behavior: "smooth"
-        });
+        if (element) {
+            const offset = 80 // Offset para navbar sticky
+            ;
+            const elementPosition = element.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.scrollY - offset;
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
+        }
         setIsMenuOpen(false);
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
@@ -786,12 +793,12 @@ function Navbar() {
                                     className: "h-10 md:h-12 w-auto brightness-0 invert"
                                 }, void 0, false, {
                                     fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/navbar.tsx",
-                                    lineNumber: 44,
+                                    lineNumber: 53,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/navbar.tsx",
-                                lineNumber: 43,
+                                lineNumber: 52,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -803,7 +810,7 @@ function Navbar() {
                                         children: "Beneficios"
                                     }, void 0, false, {
                                         fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/navbar.tsx",
-                                        lineNumber: 49,
+                                        lineNumber: 58,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -812,7 +819,7 @@ function Navbar() {
                                         children: "Producto"
                                     }, void 0, false, {
                                         fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/navbar.tsx",
-                                        lineNumber: 55,
+                                        lineNumber: 64,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -821,7 +828,7 @@ function Navbar() {
                                         children: "Testimonios"
                                     }, void 0, false, {
                                         fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/navbar.tsx",
-                                        lineNumber: 61,
+                                        lineNumber: 70,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -830,13 +837,13 @@ function Navbar() {
                                         children: "FAQ"
                                     }, void 0, false, {
                                         fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/navbar.tsx",
-                                        lineNumber: 67,
+                                        lineNumber: 76,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/navbar.tsx",
-                                lineNumber: 48,
+                                lineNumber: 57,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -851,7 +858,7 @@ function Navbar() {
                                                 className: "mr-2 h-4 w-4"
                                             }, void 0, false, {
                                                 fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/navbar.tsx",
-                                                lineNumber: 81,
+                                                lineNumber: 90,
                                                 columnNumber: 15
                                             }, this),
                                             "Carrito",
@@ -860,13 +867,13 @@ function Navbar() {
                                                 children: cartItemsCount
                                             }, void 0, false, {
                                                 fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/navbar.tsx",
-                                                lineNumber: 84,
+                                                lineNumber: 93,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/navbar.tsx",
-                                        lineNumber: 76,
+                                        lineNumber: 85,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -876,30 +883,30 @@ function Navbar() {
                                             className: "h-6 w-6"
                                         }, void 0, false, {
                                             fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/navbar.tsx",
-                                            lineNumber: 92,
+                                            lineNumber: 101,
                                             columnNumber: 29
                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$menu$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Menu$3e$__["Menu"], {
                                             className: "h-6 w-6"
                                         }, void 0, false, {
                                             fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/navbar.tsx",
-                                            lineNumber: 92,
+                                            lineNumber: 101,
                                             columnNumber: 57
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/navbar.tsx",
-                                        lineNumber: 91,
+                                        lineNumber: 100,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/navbar.tsx",
-                                lineNumber: 75,
+                                lineNumber: 84,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/navbar.tsx",
-                        lineNumber: 42,
+                        lineNumber: 51,
                         columnNumber: 9
                     }, this),
                     isMenuOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -913,7 +920,7 @@ function Navbar() {
                                     children: "Beneficios"
                                 }, void 0, false, {
                                     fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/navbar.tsx",
-                                    lineNumber: 101,
+                                    lineNumber: 110,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -922,7 +929,7 @@ function Navbar() {
                                     children: "Producto"
                                 }, void 0, false, {
                                     fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/navbar.tsx",
-                                    lineNumber: 107,
+                                    lineNumber: 116,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -931,7 +938,7 @@ function Navbar() {
                                     children: "Testimonios"
                                 }, void 0, false, {
                                     fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/navbar.tsx",
-                                    lineNumber: 113,
+                                    lineNumber: 122,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -940,7 +947,7 @@ function Navbar() {
                                     children: "FAQ"
                                 }, void 0, false, {
                                     fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/navbar.tsx",
-                                    lineNumber: 119,
+                                    lineNumber: 128,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -955,7 +962,7 @@ function Navbar() {
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/navbar.tsx",
-                                            lineNumber: 133,
+                                            lineNumber: 142,
                                             columnNumber: 17
                                         }, this),
                                         "Carrito",
@@ -964,30 +971,30 @@ function Navbar() {
                                             children: cartItemsCount
                                         }, void 0, false, {
                                             fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/navbar.tsx",
-                                            lineNumber: 136,
+                                            lineNumber: 145,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/navbar.tsx",
-                                    lineNumber: 125,
+                                    lineNumber: 134,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/navbar.tsx",
-                            lineNumber: 100,
+                            lineNumber: 109,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/navbar.tsx",
-                        lineNumber: 99,
+                        lineNumber: 108,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/navbar.tsx",
-                lineNumber: 41,
+                lineNumber: 50,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$components$2f$checkout$2d$minificado$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CheckoutMinificado"], {
@@ -995,13 +1002,13 @@ function Navbar() {
                 onClose: ()=>setIsCartOpen(false)
             }, void 0, false, {
                 fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/navbar.tsx",
-                lineNumber: 146,
+                lineNumber: 155,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/navbar.tsx",
-        lineNumber: 40,
+        lineNumber: 49,
         columnNumber: 5
     }, this);
 }
@@ -1029,9 +1036,16 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$
 function HeroSection() {
     const scrollToPricing = ()=>{
         const pricingSection = document.getElementById("pricing");
-        pricingSection?.scrollIntoView({
-            behavior: "smooth"
-        });
+        if (pricingSection) {
+            const offset = 80 // Offset para navbar sticky
+            ;
+            const elementPosition = pricingSection.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.scrollY - offset;
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
+        }
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         className: "relative overflow-hidden bg-gradient-to-b from-background via-muted/20 to-background",
@@ -1040,7 +1054,7 @@ function HeroSection() {
                 className: "absolute inset-0 bg-[url('/ocean-waves-texture.jpg')] opacity-5 bg-cover bg-center"
             }, void 0, false, {
                 fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/hero-section.tsx",
-                lineNumber: 17,
+                lineNumber: 26,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1052,46 +1066,72 @@ function HeroSection() {
                             className: "flex flex-col gap-4 md:gap-6 text-center lg:text-left",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Badge"], {
-                                    className: "self-center lg:self-start w-fit bg-accent text-accent-foreground border-0 px-4 py-2 rounded-full text-sm md:text-base",
+                                    className: "self-center lg:self-start w-fit bg-destructive text-destructive-foreground border-0 px-6 py-3 rounded-full text-sm md:text-base animate-pulse shadow-lg",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__["Sparkles"], {
                                             className: "mr-2 h-4 w-4"
                                         }, void 0, false, {
                                             fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/hero-section.tsx",
-                                            lineNumber: 23,
+                                            lineNumber: 32,
                                             columnNumber: 15
                                         }, this),
-                                        "Delicioso sabor a coco • Certificado INVIMA"
+                                        "🔥 LIQUIDACIÓN - Stock Limitado"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/hero-section.tsx",
-                                    lineNumber: 22,
+                                    lineNumber: 31,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                                     className: "text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl text-balance",
                                     children: [
-                                        "Piel Joven, Cabello Fuerte y ",
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "text-primary",
-                                            children: "Articulaciones Sanas"
+                                            className: "text-destructive",
+                                            children: "🔥 LIQUIDACIÓN:"
                                         }, void 0, false, {
                                             fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/hero-section.tsx",
-                                            lineNumber: 28,
-                                            columnNumber: 44
+                                            lineNumber: 37,
+                                            columnNumber: 15
+                                        }, this),
+                                        " 3 Frascos x ",
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "text-primary",
+                                            children: "$99.000"
+                                        }, void 0, false, {
+                                            fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/hero-section.tsx",
+                                            lineNumber: 37,
+                                            columnNumber: 85
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/hero-section.tsx",
-                                    lineNumber: 27,
+                                    lineNumber: 36,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "text-base md:text-lg text-muted-foreground text-pretty leading-relaxed",
-                                    children: "Colágeno marino hidrolizado de máxima absorción. Resultados visibles en 3 semanas: menos arrugas, cabello más grueso, uñas fuertes y mayor movilidad articular."
-                                }, void 0, false, {
+                                    children: [
+                                        "Ahorra ",
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                            className: "text-destructive",
+                                            children: "$66.000"
+                                        }, void 0, false, {
+                                            fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/hero-section.tsx",
+                                            lineNumber: 41,
+                                            columnNumber: 22
+                                        }, this),
+                                        " en esta liquidación por cambio de empaque. Mismo colágeno marino premium que amas. ",
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                            children: "¡Últimas unidades disponibles!"
+                                        }, void 0, false, {
+                                            fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/hero-section.tsx",
+                                            lineNumber: 42,
+                                            columnNumber: 55
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
                                     fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/hero-section.tsx",
-                                    lineNumber: 31,
+                                    lineNumber: 40,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1099,12 +1139,12 @@ function HeroSection() {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
                                             size: "lg",
-                                            className: "text-base md:text-lg px-6 md:px-8 py-5 md:py-6 bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg shadow-primary/30 rounded-full font-semibold transition-all duration-300 hover:scale-105",
+                                            className: "text-base md:text-xl px-8 md:px-10 py-6 md:py-8 bg-destructive hover:bg-destructive/90 text-destructive-foreground shadow-xl shadow-destructive/40 rounded-full font-bold transition-all duration-300 hover:scale-105 animate-pulse",
                                             onClick: scrollToPricing,
-                                            children: "Comprar con Envío Gratis"
+                                            children: "¡Comprar Liquidación Ahora!"
                                         }, void 0, false, {
                                             fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/hero-section.tsx",
-                                            lineNumber: 37,
+                                            lineNumber: 46,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -1117,13 +1157,13 @@ function HeroSection() {
                                             children: "Ver Beneficios"
                                         }, void 0, false, {
                                             fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/hero-section.tsx",
-                                            lineNumber: 44,
+                                            lineNumber: 53,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/hero-section.tsx",
-                                    lineNumber: 36,
+                                    lineNumber: 45,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1136,7 +1176,7 @@ function HeroSection() {
                                                     className: "h-5 w-5 text-accent flex-shrink-0"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/hero-section.tsx",
-                                                    lineNumber: 56,
+                                                    lineNumber: 65,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1144,13 +1184,13 @@ function HeroSection() {
                                                     children: "100% Natural"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/hero-section.tsx",
-                                                    lineNumber: 57,
+                                                    lineNumber: 66,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/hero-section.tsx",
-                                            lineNumber: 55,
+                                            lineNumber: 64,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1160,7 +1200,7 @@ function HeroSection() {
                                                     className: "h-5 w-5 text-accent flex-shrink-0"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/hero-section.tsx",
-                                                    lineNumber: 60,
+                                                    lineNumber: 69,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1168,25 +1208,25 @@ function HeroSection() {
                                                     children: "Envío Gratis"
                                                 }, void 0, false, {
                                                     fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/hero-section.tsx",
-                                                    lineNumber: 61,
+                                                    lineNumber: 70,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/hero-section.tsx",
-                                            lineNumber: 59,
+                                            lineNumber: 68,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/hero-section.tsx",
-                                    lineNumber: 54,
+                                    lineNumber: 63,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/hero-section.tsx",
-                            lineNumber: 21,
+                            lineNumber: 30,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1196,7 +1236,7 @@ function HeroSection() {
                                     className: "absolute -inset-4 bg-primary/10 rounded-3xl blur-3xl"
                                 }, void 0, false, {
                                     fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/hero-section.tsx",
-                                    lineNumber: 67,
+                                    lineNumber: 76,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1210,68 +1250,76 @@ function HeroSection() {
                                         priority: true
                                     }, void 0, false, {
                                         fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/hero-section.tsx",
-                                        lineNumber: 69,
+                                        lineNumber: 78,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/hero-section.tsx",
-                                    lineNumber: 68,
+                                    lineNumber: 77,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "absolute -bottom-4 -right-4 md:-bottom-6 md:-right-6 bg-accent text-accent-foreground rounded-3xl p-4 md:p-6 shadow-xl border-2 border-background",
+                                    className: "absolute -bottom-4 -right-4 md:-bottom-6 md:-right-6 bg-destructive text-destructive-foreground rounded-3xl p-4 md:p-6 shadow-xl border-4 border-background animate-pulse",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "text-xs md:text-sm text-accent-foreground/80 line-through",
-                                            children: "Antes: $60.000"
+                                            className: "text-xs md:text-sm font-bold mb-1",
+                                            children: "🔥 LIQUIDACIÓN"
                                         }, void 0, false, {
                                             fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/hero-section.tsx",
-                                            lineNumber: 80,
+                                            lineNumber: 89,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "text-2xl md:text-3xl font-bold",
-                                            children: "$55.000"
+                                            className: "text-xs md:text-sm line-through opacity-80",
+                                            children: "Antes: $165.000"
                                         }, void 0, false, {
                                             fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/hero-section.tsx",
-                                            lineNumber: 81,
+                                            lineNumber: 90,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "text-xs md:text-sm font-medium",
-                                            children: "Con envío gratis"
+                                            className: "text-3xl md:text-4xl font-bold",
+                                            children: "$99.000"
                                         }, void 0, false, {
                                             fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/hero-section.tsx",
-                                            lineNumber: 82,
+                                            lineNumber: 91,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "text-xs md:text-sm font-bold",
+                                            children: "3 Frascos + Envío GRATIS"
+                                        }, void 0, false, {
+                                            fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/hero-section.tsx",
+                                            lineNumber: 92,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/hero-section.tsx",
-                                    lineNumber: 79,
+                                    lineNumber: 88,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/hero-section.tsx",
-                            lineNumber: 66,
+                            lineNumber: 75,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/hero-section.tsx",
-                    lineNumber: 20,
+                    lineNumber: 29,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/hero-section.tsx",
-                lineNumber: 19,
+                lineNumber: 28,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/hero-section.tsx",
-        lineNumber: 16,
+        lineNumber: 25,
         columnNumber: 5
     }, this);
 }
@@ -2247,9 +2295,16 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$
 function CTASection() {
     const scrollToPricing = ()=>{
         const pricingSection = document.getElementById("pricing");
-        pricingSection?.scrollIntoView({
-            behavior: "smooth"
-        });
+        if (pricingSection) {
+            const offset = 80 // Offset para navbar sticky
+            ;
+            const elementPosition = pricingSection.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.scrollY - offset;
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
+        }
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         className: "py-20 md:py-32 bg-gradient-to-b from-primary/5 via-primary/10 to-primary/5 relative overflow-hidden",
@@ -2258,7 +2313,7 @@ function CTASection() {
                 className: "absolute inset-0 bg-[url('/abstract-wave-pattern.png')] opacity-5 bg-cover bg-center"
             }, void 0, false, {
                 fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/cta-section.tsx",
-                lineNumber: 15,
+                lineNumber: 24,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2273,14 +2328,14 @@ function CTASection() {
                                     className: "mr-2 h-5 w-5"
                                 }, void 0, false, {
                                     fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/cta-section.tsx",
-                                    lineNumber: 20,
+                                    lineNumber: 29,
                                     columnNumber: 13
                                 }, this),
                                 "⚠️ LIQUIDACIÓN - Stock Limitado"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/cta-section.tsx",
-                            lineNumber: 19,
+                            lineNumber: 28,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -2291,7 +2346,7 @@ function CTASection() {
                                     children: "¡Últimas Unidades!"
                                 }, void 0, false, {
                                     fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/cta-section.tsx",
-                                    lineNumber: 25,
+                                    lineNumber: 34,
                                     columnNumber: 13
                                 }, this),
                                 " 3 Frascos x ",
@@ -2300,13 +2355,13 @@ function CTASection() {
                                     children: "$99.000"
                                 }, void 0, false, {
                                     fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/cta-section.tsx",
-                                    lineNumber: 25,
+                                    lineNumber: 34,
                                     columnNumber: 86
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/cta-section.tsx",
-                            lineNumber: 24,
+                            lineNumber: 33,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2318,7 +2373,7 @@ function CTASection() {
                                     children: "$66.000"
                                 }, void 0, false, {
                                     fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/cta-section.tsx",
-                                    lineNumber: 29,
+                                    lineNumber: 38,
                                     columnNumber: 20
                                 }, this),
                                 " en esta liquidación especial. Mismo colágeno premium, empaque anterior. ",
@@ -2326,13 +2381,13 @@ function CTASection() {
                                     children: "¡Hasta agotar stock!"
                                 }, void 0, false, {
                                     fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/cta-section.tsx",
-                                    lineNumber: 29,
+                                    lineNumber: 38,
                                     columnNumber: 146
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/cta-section.tsx",
-                            lineNumber: 28,
+                            lineNumber: 37,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2347,18 +2402,18 @@ function CTASection() {
                                         className: "ml-2 h-6 w-6"
                                     }, void 0, false, {
                                         fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/cta-section.tsx",
-                                        lineNumber: 39,
+                                        lineNumber: 48,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/cta-section.tsx",
-                                lineNumber: 33,
+                                lineNumber: 42,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/cta-section.tsx",
-                            lineNumber: 32,
+                            lineNumber: 41,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2372,7 +2427,7 @@ function CTASection() {
                                             children: "30"
                                         }, void 0, false, {
                                             fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/cta-section.tsx",
-                                            lineNumber: 45,
+                                            lineNumber: 54,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2380,13 +2435,13 @@ function CTASection() {
                                             children: "Días de Garantía"
                                         }, void 0, false, {
                                             fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/cta-section.tsx",
-                                            lineNumber: 46,
+                                            lineNumber: 55,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/cta-section.tsx",
-                                    lineNumber: 44,
+                                    lineNumber: 53,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2397,7 +2452,7 @@ function CTASection() {
                                             children: "100%"
                                         }, void 0, false, {
                                             fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/cta-section.tsx",
-                                            lineNumber: 49,
+                                            lineNumber: 58,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2405,13 +2460,13 @@ function CTASection() {
                                             children: "Natural y Seguro"
                                         }, void 0, false, {
                                             fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/cta-section.tsx",
-                                            lineNumber: 50,
+                                            lineNumber: 59,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/cta-section.tsx",
-                                    lineNumber: 48,
+                                    lineNumber: 57,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2422,7 +2477,7 @@ function CTASection() {
                                             children: "$0"
                                         }, void 0, false, {
                                             fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/cta-section.tsx",
-                                            lineNumber: 53,
+                                            lineNumber: 62,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$amazonico$2d$landing$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2430,36 +2485,36 @@ function CTASection() {
                                             children: "Costo de Envío"
                                         }, void 0, false, {
                                             fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/cta-section.tsx",
-                                            lineNumber: 54,
+                                            lineNumber: 63,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/cta-section.tsx",
-                                    lineNumber: 52,
+                                    lineNumber: 61,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/cta-section.tsx",
-                            lineNumber: 43,
+                            lineNumber: 52,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/cta-section.tsx",
-                    lineNumber: 18,
+                    lineNumber: 27,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/cta-section.tsx",
-                lineNumber: 17,
+                lineNumber: 26,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/Documents/repos/v0-amazonico-landing-page/components/cta-section.tsx",
-        lineNumber: 14,
+        lineNumber: 23,
         columnNumber: 5
     }, this);
 }
