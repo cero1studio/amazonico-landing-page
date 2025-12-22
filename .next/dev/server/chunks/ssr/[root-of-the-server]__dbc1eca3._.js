@@ -130,14 +130,14 @@ const metadata = {
     ],
     creator: "CeroUno SAS",
     publisher: "Amazoniico",
-    metadataBase: new URL(("TURBOPACK compile-time value", "http://localhost:3000") || "https://amazoniico.co"),
+    metadataBase: new URL(("TURBOPACK compile-time value", "https://amazoniico.com") || "https://amazoniico.co"),
     alternates: {
         canonical: "/"
     },
     openGraph: {
         title: "Amazoniico - LIQUIDACIÓN 40% OFF - 3 Frascos x $99.000",
         description: "🔥 LIQUIDACIÓN: 3 Frascos de colágeno marino premium por $99.000 (antes $165.000). Stock limitado - Cambio de empaque. Ahorra $66.000 + Envío GRATIS.",
-        url: ("TURBOPACK compile-time value", "http://localhost:3000") || "https://amazoniico.co",
+        url: ("TURBOPACK compile-time value", "https://amazoniico.com") || "https://amazoniico.co",
         siteName: "Amazoniico",
         images: [
             {

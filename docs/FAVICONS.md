@@ -174,3 +174,4 @@ Si ya tienes el logo de Amazoniico:
 - [Next.js - Metadata Icons](https://nextjs.org/docs/app/api-reference/functions/generate-metadata#icons)
 - [Apple - Touch Icons](https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html)
 
+

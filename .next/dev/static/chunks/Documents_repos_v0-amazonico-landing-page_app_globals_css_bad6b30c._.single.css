@@ -1973,16 +1973,6 @@
     color: var(--accent-foreground);
   }
 
-  .text-accent-foreground\/80 {
-    color: var(--accent-foreground);
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .text-accent-foreground\/80 {
-      color: color-mix(in oklab, var(--accent-foreground) 80%, transparent);
-    }
-  }
-
   .text-card-foreground {
     color: var(--card-foreground);
   }
@@ -2185,16 +2175,6 @@
   @supports (color: color-mix(in lab, red, red)) {
     .shadow-destructive\/40 {
       --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, var(--destructive) 40%, transparent) var(--tw-shadow-alpha), transparent);
-    }
-  }
-
-  .shadow-primary\/30 {
-    --tw-shadow-color: var(--primary);
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .shadow-primary\/30 {
-      --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, var(--primary) 30%, transparent) var(--tw-shadow-alpha), transparent);
     }
   }
 
@@ -3257,12 +3237,6 @@
   @media (min-width: 48rem) {
     .md\:grid-cols-1 {
       grid-template-columns: repeat(1, minmax(0, 1fr));
-    }
-  }
-
-  @media (min-width: 48rem) {
-    .md\:grid-cols-2 {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
 

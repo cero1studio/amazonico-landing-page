@@ -2215,7 +2215,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Documents$2f$repos$2f$v0$2d$
 ;
 ;
 function Home() {
-    const baseUrl = ("TURBOPACK compile-time value", "http://localhost:3000") || "https://amazoniico.co";
+    const baseUrl = ("TURBOPACK compile-time value", "https://amazoniico.com") || "https://amazoniico.co";
     const jsonLd = {
         "@context": "https://schema.org",
         "@type": "Product",

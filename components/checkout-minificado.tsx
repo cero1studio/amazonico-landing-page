@@ -327,3 +327,4 @@ export function CheckoutMinificado({ isOpen, onClose }: CheckoutMinificadoProps)
     </>
   )
 }
+

@@ -184,3 +184,4 @@ pnpm lint         # Ejecuta ESLint
 
 **Desarrollado por:** CeroUno SAS
 
+

@@ -225,3 +225,4 @@ Implementado para producto:
 - Actualizar variables de entorno cuando se tenga dominio real
 - Revisar y actualizar precios y disponibilidad en Schema.org regularmente
 
+
